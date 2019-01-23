@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/willdunn/QuadrilateralRepo/assignment3/FilterFunctions.h
+vector
+-
+
+/Users/willdunn/QuadrilateralRepo/assignment3/ParallelAndCongruentFunctions.h
+vector
+-
+cmath
+-
+iostream
+-
+
+/Users/willdunn/QuadrilateralRepo/assignment3/main.cpp
+iostream
+-
+vector
+-
+string
+-
+ParallelAndCongruentFunctions.h
+/Users/willdunn/QuadrilateralRepo/assignment3/ParallelAndCongruentFunctions.h
+FilterFunctions.h
+/Users/willdunn/QuadrilateralRepo/assignment3/FilterFunctions.h
+
