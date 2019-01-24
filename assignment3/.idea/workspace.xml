@@ -12,12 +12,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85b148d0-07e9-47de-901a-76c545dc0587" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$USER_HOME$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/FilterFunctions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterFunctions.o" beforeDir="false" afterPath="$PROJECT_DIR$/FilterFunctions.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParallelAndCongruentFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ParallelAndCongruentFunctions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParallelAndCongruentFunctions.h" beforeDir="false" afterPath="$PROJECT_DIR$/ParallelAndCongruentFunctions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParallelAndCongruentFunctions.o" beforeDir="false" afterPath="$PROJECT_DIR$/ParallelAndCongruentFunctions.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/CXX.includecache" afterDir="false" />
@@ -33,6 +37,8 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/assignment3.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/assignment3.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quadKilla" beforeDir="false" afterPath="$PROJECT_DIR$/quadKilla" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,17 +106,50 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1937903990">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="h" value="2" />
+          <entry key="txt" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="2" />
+          <entry key="ObjectiveC" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="1476" />
+          <entry key="h" value="75" />
+          <entry key="mm" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Doxygen file" value="5" />
+          <entry key="ObjectiveC" value="1556" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -118,8 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FilterFunctions.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="165">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
               <folding>
                 <element signature="e#43#71#0" expanded="true" />
               </folding>
@@ -130,8 +169,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParallelAndCongruentFunctions.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+            <state relative-caret-position="1395">
+              <caret line="93" column="127" selection-start-line="93" selection-start-column="127" selection-end-line="93" selection-end-column="127" />
             </state>
           </provider>
         </entry>
@@ -139,8 +178,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParallelAndCongruentFunctions.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+            <state relative-caret-position="375">
+              <caret line="25" column="135" selection-start-line="25" selection-start-column="135" selection-end-line="25" selection-end-column="135" />
               <folding>
                 <element signature="e#42#59#0" expanded="true" />
               </folding>
@@ -158,8 +197,8 @@
       <list>
         <option value="$PROJECT_DIR$/FilterFunctions.h" />
         <option value="$PROJECT_DIR$/FilterFunctions.cpp" />
-        <option value="$PROJECT_DIR$/ParallelAndCongruentFunctions.h" />
         <option value="$PROJECT_DIR$/ParallelAndCongruentFunctions.cpp" />
+        <option value="$PROJECT_DIR$/ParallelAndCongruentFunctions.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
@@ -232,7 +271,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="assignment3" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="2 0 3 1 1 1" PASS_PARENT_ENVS_2="true" PROJECT_NAME="assignment3" TARGET_NAME="assignment3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="assignment3" RUN_TARGET_NAME="assignment3">
+    <configuration name="assignment3" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/testCasesByLine.txt" PASS_PARENT_ENVS_2="true" PROJECT_NAME="assignment3" TARGET_NAME="assignment3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="assignment3" RUN_TARGET_NAME="assignment3">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -257,18 +296,21 @@
       <workItem from="1547772645195" duration="60000" />
       <workItem from="1548178785239" duration="272000" />
       <workItem from="1548196881446" duration="1145000" />
+      <workItem from="1548297873299" duration="1425000" />
+      <workItem from="1548348978926" duration="493000" />
+      <workItem from="1548350127001" duration="4794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29293000" />
+    <option name="totallyTimeSpent" value="36005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="42" width="1398" height="777" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49814126" visible="true" weight="0.120943956" />
-      <window_info id="Structure" order="1" sideWeight="0.5018587" side_tool="true" weight="0.116519175" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49641576" visible="true" weight="0.12536873" />
+      <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.21459854" />
@@ -277,11 +319,12 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.329927" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.18540145" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.49926254" weight="0.329927" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49778762" visible="true" weight="0.19270073" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5022124" side_tool="true" weight="0.19270073" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.329927" />
+      <window_info anchor="bottom" x="617" y="290" width="166" height="280" id="Structure" order="13" sideWeight="0.5022124" side_tool="true" weight="0.19270073" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -295,26 +338,23 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>34</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="slopeToCompare1" language="ObjectiveC" />
         <watch expression="slopeToCompare2" language="ObjectiveC" />
         <watch expression="dx" language="ObjectiveC" />
         <watch expression="dy" language="ObjectiveC" />
+        <watch expression="str.size()" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>str.size()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>points[3]</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -343,9 +383,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -360,40 +397,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+        <state relative-caret-position="75">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/_ctype.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="268" selection-start-line="268" selection-end-line="268" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParallelAndCongruentFunctions.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="93" column="127" selection-start-line="93" selection-start-column="127" selection-end-line="93" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParallelAndCongruentFunctions.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="135" selection-start-line="25" selection-start-column="135" selection-end-line="25" selection-end-column="135" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#42#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FilterFunctions.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="165">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
           <folding>
             <element signature="e#43#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParallelAndCongruentFunctions.cpp">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParallelAndCongruentFunctions.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-          <folding>
-            <element signature="e#42#59#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
         </state>
       </provider>
     </entry>

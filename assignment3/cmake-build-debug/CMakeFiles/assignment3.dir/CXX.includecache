@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/willdunn/QuadrilateralRepo/assignment3/FilterFunctions.h
+/Users/willdunn/WillDunn/assignment3/FilterFunctions.h
 vector
 -
 
-/Users/willdunn/QuadrilateralRepo/assignment3/ParallelAndCongruentFunctions.h
+/Users/willdunn/WillDunn/assignment3/ParallelAndCongruentFunctions.h
 vector
 -
 cmath
@@ -18,15 +18,17 @@ cmath
 iostream
 -
 
-/Users/willdunn/QuadrilateralRepo/assignment3/main.cpp
+/Users/willdunn/WillDunn/assignment3/main.cpp
 iostream
 -
 vector
 -
 string
 -
+fstream
+-
 ParallelAndCongruentFunctions.h
-/Users/willdunn/QuadrilateralRepo/assignment3/ParallelAndCongruentFunctions.h
+/Users/willdunn/WillDunn/assignment3/ParallelAndCongruentFunctions.h
 FilterFunctions.h
-/Users/willdunn/QuadrilateralRepo/assignment3/FilterFunctions.h
+/Users/willdunn/WillDunn/assignment3/FilterFunctions.h
 

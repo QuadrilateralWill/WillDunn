@@ -3,7 +3,6 @@
 //
 #include <vector>
 #include <cmath>
-#include <iostream> //todo delete when done testing
 #pragma once
 
 /**
@@ -24,7 +23,7 @@
 bool hasBothSidesParallel(const std::vector<double> &points);
 bool hasOneParallelSide(const std::vector<double> &points);
 bool hasTwoCongruentSides(const std::vector<double> &points);
-bool hasFourCongruentSides(const std::vector<double> &points);
+bool hasFourCongruentSides(const std::vector<double> &points); //not deleted because allows for future, advanced specification of quads
 bool hasFourRightAngles(const std::vector<double> &points);
 int parallelSideCount(const std::vector<double> &points);
 int congruentSideCount(const std::vector<double> &points);
