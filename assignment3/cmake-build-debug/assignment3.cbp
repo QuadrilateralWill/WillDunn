@@ -95,6 +95,12 @@
 		<Unit filename="/Users/willdunn/WillDunn/assignment3/main.cpp">
 			<Option target="assignment3"/>
 		</Unit>
+		<Unit filename="/Users/willdunn/WillDunn/assignment3/tests.cpp">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/willdunn/WillDunn/assignment3/tests.h">
+			<Option target="assignment3"/>
+		</Unit>
 		<Unit filename="/Users/willdunn/WillDunn/assignment3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

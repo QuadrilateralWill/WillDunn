@@ -5,6 +5,7 @@
 #include "ParallelAndCongruentFunctions.h"
 #include "FilterFunctions.h"
 
+
 //prototyping
 void examineFile(int argc, char *argv[]);
 std::string processPoints(const std::vector<double> &points);
