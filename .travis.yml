@@ -1,3 +1,4 @@
-install: make get-deps
 language: cpp
-compiler: clang
+compiler: clang++
+script: ./configure && make && make test
+	- cpp tests.cpp
