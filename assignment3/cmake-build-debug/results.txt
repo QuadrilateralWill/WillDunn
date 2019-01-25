@@ -1,7 +1,0 @@
-quadrilateral
-parallelogram
-rectangle
-square
-rhombus
-quadrilateral
-kite
