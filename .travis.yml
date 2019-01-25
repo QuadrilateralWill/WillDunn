@@ -1,4 +1,4 @@
 os: osx
 language: cpp
 compiler: clang++
-script: ./quadrilateralClassifier testCasesByLine.txt
+script: chmod +x ./code.sh
