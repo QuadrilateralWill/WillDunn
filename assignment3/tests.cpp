@@ -39,5 +39,5 @@ bool trapTest() {
 }
 
 bool outputTest() {
-    
+
 }
