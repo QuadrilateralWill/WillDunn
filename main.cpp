@@ -98,7 +98,7 @@ std::string processPoints(const std::vector<double> &points) {
     if (quadState == 1) quadState = parallelogramFilter(points);
 
     //output based on the state
-    std::vector<std::string> typeOfQuad{"uadrilateral", "parallelogram", "rectangle", "rhombus", "square",
+    std::vector<std::string> typeOfQuad{"quadrilateral", "parallelogram", "rectangle", "rhombus", "square",
                                         "trapezoid", "kite"};
     //std::cout << typeOfQuad[quadState] << std::endl;
     return typeOfQuad[quadState];
