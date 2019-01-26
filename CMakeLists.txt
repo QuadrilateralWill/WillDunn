@@ -3,4 +3,4 @@ project(assignment3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(assignment3 main.cpp ParallelAndCongruentFunctions.cpp ParallelAndCongruentFunctions.h FilterFunctions.cpp FilterFunctions.h tests.cpp tests.h)
+add_executable(assignment3 main.cpp ParallelAndCongruentFunctions.cpp ParallelAndCongruentFunctions.h FilterFunctions.cpp FilterFunctions.h)

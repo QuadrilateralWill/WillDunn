@@ -38,6 +38,12 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
+/**
+ * Looks at a file and pulls the arguments from within, which are used to be classified on an individual basis on which
+ * type of quadrilateral they are.  The outputs are all written to a file called results.txt
+ * @param argc
+ * @param argv
+ */
 void examineFile(int argc, char *argv[]) {
     std::vector<double> points; //the first point will always be (0, 0)
     std::ofstream outputFile;
@@ -92,7 +98,7 @@ std::string processPoints(const std::vector<double> &points) {
     if (quadState == 1) quadState = parallelogramFilter(points);
 
     //output based on the state
-    std::vector<std::string> typeOfQuad{"quadrilateral", "parallelogram", "rectangle", "rhombus", "square",
+    std::vector<std::string> typeOfQuad{"uadrilateral", "parallelogram", "rectangle", "rhombus", "square",
                                         "trapezoid", "kite"};
     //std::cout << typeOfQuad[quadState] << std::endl;
     return typeOfQuad[quadState];
