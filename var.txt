@@ -5,3 +5,17 @@ square
 rhombus
 quadrilateral
 kite
+uadrilateral
+parallelogram
+rectangle
+square
+rhombus
+uadrilateral
+kite
+quadrilateral
+parallelogram
+rectangle
+square
+rhombus
+quadrilateral
+kite
