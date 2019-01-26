@@ -3,5 +3,5 @@ parallelogram
 rectangle
 square
 rhombus
-quadrilateral
+trapezoid
 kite

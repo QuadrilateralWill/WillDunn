@@ -97,12 +97,6 @@
 		<Unit filename="/Users/willdunn/WillDunn/main.cpp">
 			<Option target="assignment3"/>
 		</Unit>
-		<Unit filename="/Users/willdunn/WillDunn/tests.cpp">
-			<Option target="assignment3"/>
-		</Unit>
-		<Unit filename="/Users/willdunn/WillDunn/tests.h">
-			<Option target="assignment3"/>
-		</Unit>
 		<Unit filename="/Users/willdunn/WillDunn/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

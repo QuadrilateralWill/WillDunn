@@ -2,6 +2,7 @@
 // Created by Will Dunn on 1/15/19.
 //
 
+#include <iostream>
 #include "ParallelAndCongruentFunctions.h"
 
 double slopeToCompare1, slopeToCompare2, dx, dy, distanceOfSideOne, distanceOfSideTwo, distanceOfSideThree, distanceOfSideFour;
@@ -46,7 +47,7 @@ bool hasFourRightAngles(const std::vector<double> &points) {
 int parallelSideCount(const std::vector<double> &points) {
     int parallelCount = 0;
 
-    //evaluate size 1 and 3 for parallelism
+    //evaluate side 1 and 3 for parallelism
     dx = points[2] - 0;
     dy = points[3] - 0;
     slopeToCompare1 = dy / dx;
@@ -55,7 +56,7 @@ int parallelSideCount(const std::vector<double> &points) {
     slopeToCompare2 = dy / dx;
     if (slopeToCompare1 == slopeToCompare2) parallelCount++;
 
-    //evaluate size 2 and 4 for parallelism
+    //evaluate side 2 and 4 for parallelism
     dx = points[4] - points[2];
     dy = points[5] - points[3];
     slopeToCompare1 = dy / dx;
@@ -91,7 +92,7 @@ int congruentSideCount(const std::vector<double> &points) {
     dy = (points[7] - 0) * (points[7] - 0);
     distanceOfSideFour = sqrt(dx + dy);
 
-    //works because you are at parallelogram state because having three sides congruent with first means all four are congruent
+    //works because you are only dealing with parallelograms at this point
     if (distanceOfSideOne == distanceOfSideTwo) congruentCount++;
     if (distanceOfSideOne == distanceOfSideThree) congruentCount++;
     if (distanceOfSideOne == distanceOfSideFour) congruentCount++;

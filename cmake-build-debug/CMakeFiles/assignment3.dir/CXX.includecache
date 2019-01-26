@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/willdunn/WillDunn/ParallelAndCongruentFunctions.cpp
+iostream
+-
+ParallelAndCongruentFunctions.h
+/Users/willdunn/WillDunn/ParallelAndCongruentFunctions.h
+
+/Users/willdunn/WillDunn/ParallelAndCongruentFunctions.h
+vector
+-
+cmath
+-
+

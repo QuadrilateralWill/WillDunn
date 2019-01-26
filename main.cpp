@@ -64,7 +64,8 @@ void examineFile(int argc, char *argv[]) {
                 num = ""; //bookkeeping
                 continue; //whitespace, so continue to next number
             } else if (linePosition == currLine.size() - 1) {
-                points.push_back(currLine[linePosition] - '0');
+                num += currLine[linePosition];
+                points.push_back(std::stoi(num));
                 break;
             }
             num += currLine[linePosition];
