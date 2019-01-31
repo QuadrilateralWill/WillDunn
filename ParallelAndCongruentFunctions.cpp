@@ -99,17 +99,3 @@ int congruentSideCount(const std::vector<double> &points) {
 
     return congruentCount;
 }
-
-/**
- * Helpler function to get the distance between two coordinates.
- * @param x1
- * @param x2
- * @param y1
- * @param y2
- * @return a double representing the distance
- */
-double calculateDistance(int x1, int x2, int y1, int y2){
-    dx = (x2 - x1) * (x2 - x1);
-    dy = (y2 - y1) * (y2 - y1);
-    return sqrt(dx + dy);
-}

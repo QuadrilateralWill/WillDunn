@@ -9,7 +9,7 @@
 //prototyping
 void examineFile(int argc, char *argv[]);
 std::string processPoints(const std::vector<double> &points);
-//todo move all comments from the .cpp files into the .h to mitigate clutter, and i think this is how it's suppose to be
+
 /**
  * Determine what quadrilateral the argument is.  If an input .txt is received, the file will be examined and an output
  * file will be supplied with the output of quadrilateral type.

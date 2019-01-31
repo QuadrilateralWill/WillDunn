@@ -7,28 +7,24 @@
 #include "ParallelAndCongruentFunctions.h"
 
 void errorType(int errorNumber) {
-/**
-     * "error 1" -- if the line contains the wrong number of points, contains invalid characters, has coordinates out of the range 0..100, or otherwise fails to describe three points (six integer values)
-"error 2" -- if any two points coincide
-"error 3" -- if any two line segments representing sides cross each other
-"error 4" -- if any three points are colinear
-     */
-
-    //todo implement this differently to be more descriptive and possibly add exits instead of breaks;
     switch (errorNumber) {
         case 1:
             std::cout << "Error 1 - the line contains the wrong number of points, contains invalid characters, has coordinates out "
             "of the range 0..100, or otherwise fails to describe three points (six integer values).\n";
-            exit(-1);
+            return;
+//            exit(-1);
         case 2:
             std::cout << "Error 2 - two points collide.\n";
-            exit(-1);
+            return;
+//            exit(-1);
         case 3:
             std::cout << "Error 3 - two line segments representing sides cross each other.\n";
-            exit(-1);
+            return;
+//            exit(-1);
         case 4:
             std::cout << "Error 4 - three points are colinear\n";
-            exit(-1);
+            return;
+//            exit(-1);
     }
 }
 
@@ -68,19 +64,6 @@ bool hasPointsThatCoincide(const std::vector<double> &points) {
 }
 
 bool hasCrossingLineSegments(const std::vector<double> &points) {
-//    double slope1, slope2; //todo choose better names; like which line segment they represent: AB or CD
-//
-//    if (points[0] == points[2]) {
-//        return !(points[4] == points[6] && points[0] != points[4]);
-//    } else if (points[4] == points[6]) {
-//        return true;
-//    } else {
-//        // Both lines are not parallel to the y-axis
-//        slope1 = (points[1]-points[3])/(points[0]-points[2]);
-//        slope2 = (points[5]-points[7])/(points[4]-points[6]);
-//        return slope1 != slope2;
-//    }
-
     double ax = points[2] - points[0];     // direction of line a
     double ay = points[3] - points[1];     // ax and ay as above
 
