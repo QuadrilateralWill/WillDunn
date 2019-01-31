@@ -7,7 +7,7 @@
 
 \f0\fs24 \cf0 //copy and paste the below sets into the terminal to test for which type of quadrilateral they are\
 \
-\
+Valid:\
 Quadrilateral\
 7 0 2 2 1 1\
 Parallelograms\
@@ -21,4 +21,28 @@ Rhombi\
 Trapezoids\
 14 0 10 10 4 10\
 Kites\
-3 0 4 4 0 3}
+3 0 4 4 0 3\
+\
+Errors:\
+Invalid Points\
+2L 1L 33L 4 5 6 //long points\
+90 88 87 86 85 84 //big points\
+1.22222f 2 3 4 5 6 //float points\
+2.22 1.11 13.11 //double points\
+.11 .22 .33 4 5 6 //double points without leading 0\
+100.0000001 2 3 4 5 6 // precision point out of bounds double\
+. 2 3 4 5 6 //period point\
+\'91\'92 2 3 4 5 6 //null points\
+C c 34 2 4 3 //character points\
+\\n \\r 3 4 5 6  //newline and return carriage points\
+-6 -.999999999 3 4 5 6 //negative points\
+Points That Coincide\
+1 2 3 4 0 0\
+Crossing Line Segments\
+4 4 4 0 0 4\
+Three Co-linear Points\
+1 1 2 2 3 3\
+Triangle with a Line\
+2 0 2 3 2 2\
+\
+}

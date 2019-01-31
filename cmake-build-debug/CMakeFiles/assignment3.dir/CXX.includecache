@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/willdunn/WillDunn/ParallelAndCongruentFunctions.cpp
+/Users/willdunn/WillDunn/Errors.cpp
 iostream
 -
+Errors.h
+/Users/willdunn/WillDunn/Errors.h
 ParallelAndCongruentFunctions.h
 /Users/willdunn/WillDunn/ParallelAndCongruentFunctions.h
+
+/Users/willdunn/WillDunn/Errors.h
+vector
+-
+string
+-
 
 /Users/willdunn/WillDunn/ParallelAndCongruentFunctions.h
 vector

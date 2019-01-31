@@ -27,3 +27,4 @@ bool hasFourCongruentSides(const std::vector<double> &points); //not deleted bec
 bool hasFourRightAngles(const std::vector<double> &points);
 int parallelSideCount(const std::vector<double> &points);
 int congruentSideCount(const std::vector<double> &points);
+double calculateDistance(int x1, int x2, int y1, int y2);

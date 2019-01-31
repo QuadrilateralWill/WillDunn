@@ -72,7 +72,7 @@ int parallelSideCount(const std::vector<double> &points) {
 int congruentSideCount(const std::vector<double> &points) {
     int congruentCount = 0;
 
-    //evaluate side 1 for distance
+    //evaluate side 1 for distance  todo redo these to utilize the distance formula function; makes it cleaner
     dx = (points[2] - 0) * (points[2] - 0);
     dy = (points[3] - 0) * (points[3] - 0);
     distanceOfSideOne = sqrt(dx + dy);
@@ -100,3 +100,16 @@ int congruentSideCount(const std::vector<double> &points) {
     return congruentCount;
 }
 
+/**
+ * Helpler function to get the distance between two coordinates.
+ * @param x1
+ * @param x2
+ * @param y1
+ * @param y2
+ * @return a double representing the distance
+ */
+double calculateDistance(int x1, int x2, int y1, int y2){
+    dx = (x2 - x1) * (x2 - x1);
+    dy = (y2 - y1) * (y2 - y1);
+    return sqrt(dx + dy);
+}

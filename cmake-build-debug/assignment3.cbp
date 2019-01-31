@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/willdunn/WillDunn/Errors.cpp">
+			<Option target="assignment3"/>
+		</Unit>
+		<Unit filename="/Users/willdunn/WillDunn/Errors.h">
+			<Option target="assignment3"/>
+		</Unit>
 		<Unit filename="/Users/willdunn/WillDunn/FilterFunctions.cpp">
 			<Option target="assignment3"/>
 		</Unit>
