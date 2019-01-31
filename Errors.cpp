@@ -11,20 +11,16 @@ void errorType(int errorNumber) {
         case 1:
             std::cout << "Error 1 - the line contains the wrong number of points, contains invalid characters, has coordinates out "
             "of the range 0..100, or otherwise fails to describe three points (six integer values).\n";
-            return;
-//            exit(-1);
+            exit(-1);
         case 2:
             std::cout << "Error 2 - two points collide.\n";
-            return;
-//            exit(-1);
+            exit(-1);
         case 3:
             std::cout << "Error 3 - two line segments representing sides cross each other.\n";
-            return;
-//            exit(-1);
+            exit(-1);
         case 4:
             std::cout << "Error 4 - three points are colinear\n";
-            return;
-//            exit(-1);
+            exit(-1);
     }
 }
 
@@ -32,19 +28,6 @@ bool isInvalidCharacter(std::string inputString){
     //first check if the points are numbers; and will find '.' to check for doubles/floats as well
     for(int i = 0; i < inputString.length(); i++){
         if(inputString[i] - '0' < 0 || inputString[i] - '0' > 9) return false;
-    }
-
-    return false;
-}
-
-bool hasInvalidCharacters(const std::vector<double> &points) {
-    //first check if the points are numbers todo doesn't account for numbers larger than 9
-    for (int i = 0; i < points.size(); i++) {
-        if (points[i] - '0' < 0 || points[i] - '0' > 9) return true;
-    }
-    //next check if the points are doubles/floats and return false if so
-    for (int i = 0; i < points.size(); i++) {
-        if ((points[i] - (int) points[i]) != 0) return true;
     }
 
     return false;

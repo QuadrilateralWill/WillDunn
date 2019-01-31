@@ -17,7 +17,7 @@ std::string processPoints(const std::vector<double> &points);
  *  -contains four points (the first being 0,0), which make up a quadrilateral, with a space between each point.
  */
 int main(int argc, char *argv[]) {
-    if(argc < 2) errorType(1);
+    //if(argc < 2) errorType(1); //todo was causing issues with the bashscript triggering here at almost every test
 
     //deal with input .txt
     if (argc == 2) {
@@ -30,11 +30,11 @@ int main(int argc, char *argv[]) {
     for (int argIter = 1; argIter < argc; argIter++) {
         if(isInvalidCharacter(argv[argIter])) errorType(1);
         std::string strToConvertToDecimal = argv[argIter]; //zero added to ensure a find() result of 0 means unfound '.'
-//        std::size_t pos = strToConvertToDecimal.find("."); //uncomment if you want to add precision(2) functionality
-//        if(pos != std::string::npos || strToConvertToDecimal[0] == '.'){ //dealing with a decimal number
-//            strToConvertToDecimal = strToConvertToDecimal.substr(0, pos) + strToConvertToDecimal.substr(pos, 3);
-//        }
-        if(std::stod(strToConvertToDecimal) > 100 || std::stod(strToConvertToDecimal) < 0) errorType(1);
+        try {
+            if (std::stod(strToConvertToDecimal) > 100 || std::stod(strToConvertToDecimal) < 0) errorType(1); //the point is out of range
+        } catch (const std::exception& e){
+            errorType(1);
+        }
         points.push_back(std::stod(strToConvertToDecimal));
     }
 
@@ -66,7 +66,11 @@ void examineFile(int argc, char *argv[]) {
         //loop through the current line to separate numbers
         for (int linePosition = 0; linePosition < currLine.size(); linePosition++) {
             if (isspace(currLine[linePosition])) {
-                if(std::stod(num) > 100 || std::stod(num) < 0 ) errorType(1); //the point is out of range
+                try {
+                    if (std::stod(num) > 100 || std::stod(num) < 0) errorType(1); //the point is out of range
+                } catch (const std::exception& e){
+                    errorType(1);
+                }
                 points.push_back(std::stod(num));
                 num = ""; //bookkeeping
                 continue; //whitespace, so continue to next number
@@ -76,7 +80,6 @@ void examineFile(int argc, char *argv[]) {
                 break;
             }
             num += currLine[linePosition];
-            if(isInvalidCharacter(num)) errorType(1);
         }
         if(points.size() != 8) errorType(1); //the input doesn't contain the correct number of points
 

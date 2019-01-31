@@ -6,18 +6,14 @@
 
 #IncludeRegexTransform: 
 
-/Users/willdunn/WillDunn/Errors.cpp
-iostream
--
-Errors.h
-/Users/willdunn/WillDunn/Errors.h
-ParallelAndCongruentFunctions.h
-/Users/willdunn/WillDunn/ParallelAndCongruentFunctions.h
-
 /Users/willdunn/WillDunn/Errors.h
 vector
 -
 string
+-
+
+/Users/willdunn/WillDunn/FilterFunctions.h
+vector
 -
 
 /Users/willdunn/WillDunn/ParallelAndCongruentFunctions.h
@@ -25,4 +21,20 @@ vector
 -
 cmath
 -
+
+/Users/willdunn/WillDunn/main.cpp
+iostream
+-
+vector
+-
+string
+-
+fstream
+-
+ParallelAndCongruentFunctions.h
+/Users/willdunn/WillDunn/ParallelAndCongruentFunctions.h
+FilterFunctions.h
+/Users/willdunn/WillDunn/FilterFunctions.h
+Errors.h
+/Users/willdunn/WillDunn/Errors.h
 

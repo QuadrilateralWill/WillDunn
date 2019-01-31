@@ -1,4 +1,1 @@
 Error 1 - the line contains the wrong number of points, contains invalid characters, has coordinates out of the range 0..100, or otherwise fails to describe three points (six integer values).
-Error 1 - the line contains the wrong number of points, contains invalid characters, has coordinates out of the range 0..100, or otherwise fails to describe three points (six integer values).
-Error 3 - two line segments representing sides cross each other.
-kite
