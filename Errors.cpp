@@ -9,8 +9,9 @@
 void errorType(int errorNumber) {
     switch (errorNumber) {
         case 1:
-            std::cout << "Error 1 - the line contains the wrong number of points, contains invalid characters, has coordinates out "
-            "of the range 0..100, or otherwise fails to describe three points (six integer values).\n";
+            std::cout
+                    << "Error 1 - the line contains the wrong number of points, contains invalid characters, has coordinates out "
+                       "of the range 0..100, or otherwise fails to describe three points (six integer values).\n";
             exit(-1);
         case 2:
             std::cout << "Error 2 - two points collide.\n";
@@ -24,46 +25,25 @@ void errorType(int errorNumber) {
     }
 }
 
-bool isInvalidCharacter(std::string inputString){
-    //first check if the points are numbers; and will find '.' to check for doubles/floats as well
-    for(int i = 0; i < inputString.length(); i++){
-        if(inputString[i] - '0' < 0 || inputString[i] - '0' > 9) return false;
-    }
-
-    return false;
-}
-
 bool hasPointsThatCoincide(const std::vector<double> &points) {
     for (int i = 0; i < points.size() - 1; i += 2) {
         for (int j = 2; j < points.size() - 1; j += 2) { //starting at two because you will start on the second point
             //check if the x-coordinate overlaps
-            if (points[i] == points[j]) {
+            if (points[i] == points[j] && i != j) {
                 //if so, check for an overlapping y-coordinate
-                if (points[i + 1] == points[j + 1]) return false;
+                if (points[i + 1] == points[j + 1]) return true;
             }
         }
     }
     return false;
 }
 
-bool hasCrossingLineSegments(const std::vector<double> &points) {
-    double ax = points[2] - points[0];     // direction of line a
-    double ay = points[3] - points[1];     // ax and ay as above
-
-    double bx = points[4] - points[6];     // direction of line b, reversed
-    double by = points[5] - points[7];     // really -by and -by as above
-
-    double dx = points[4] - points[0];   // right-hand side
-    double dy = points[5] - points[1];
-
-    double det = ax * by - ay * bx;
-
-    if (det == 0) return false;
-
-    double r = (dx * by - dy * bx) / det;
-    double s = (ax * dy - ay * dx) / det;
-
-    return !(r < 0 || r > 1 || s < 0 || s > 1);
+bool hasCrossingLineSegments(int aX, int aY, int bX, int bY, int cX, int cY, int dX, int dY) {
+    return (((cX-aX)*(bY-aY) - (cY-aY)*(bX-aX))
+            * ((dX-aX)*(bY-aY) - (dY-aY)*(bX-aX)) < 0)
+           &&
+           (((aX-cX)*(dY-cY) - (aY-cY)*(dX-cX))
+            * ((bX-cX)*(dY-cY) - (bY-cY)*(dX-cX)) < 0);
 }
 
 /**

@@ -28,16 +28,17 @@ int main(int argc, char *argv[]) {
 
     //fill vector with points from arguments
     for (int argIter = 1; argIter < argc; argIter++) {
-        if(isInvalidCharacter(argv[argIter])) errorType(1);
-        std::string strToConvertToDecimal = argv[argIter]; //zero added to ensure a find() result of 0 means unfound '.'
+//        if(isInvalidCharacter(argv[argIter])) errorType(1);
+//        std::string strToConvertToDecimal = argv[argIter]; //zero added to ensure a find() result of 0 means unfound '.'
         try {
+            std::string strToConvertToDecimal = argv[argIter]; //zero added to ensure a find() result of 0 means unfound '.'
             if (std::stod(strToConvertToDecimal) > 100 || std::stod(strToConvertToDecimal) < 0) errorType(1); //the point is out of range
+            else if(std::stod(strToConvertToDecimal) - (int) std::stod(strToConvertToDecimal) != 0) errorType(1);
+            points.push_back(std::stod(strToConvertToDecimal));
         } catch (const std::exception& e){
             errorType(1);
         }
-        points.push_back(std::stod(strToConvertToDecimal));
     }
-
     if(points.size() != 8) errorType(1);
 
     std::cout << processPoints(points) << std::endl;
@@ -101,7 +102,11 @@ void examineFile(int argc, char *argv[]) {
 std::string processPoints(const std::vector<double> &points) {
 
     if(hasPointsThatCoincide(points)) errorType(2);
-    else if(hasCrossingLineSegments(points)) errorType(3);
+    else if (hasCrossingLineSegments(0, 0, points[2], points[3], points[4], points[5], points[6], points[7]) ||
+            hasCrossingLineSegments(0, 0, points[6], points[7], points[4], points[5], points[2], points[3])) {
+        errorType(3);
+    }
+    //else if(hasCrossingLineSegments(points)) errorType(3);
     else if(hasThreeColinearPoints(points)) errorType(4);
 
     //go through hierarchy of determining which type of quadrilateral the input is utilizing finite states

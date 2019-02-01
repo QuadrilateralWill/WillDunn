@@ -29,13 +29,8 @@ bool hasFourCongruentSides(const std::vector<double> &points) {
 
 ///returns true if the parallelogram in question has four right angles
 bool hasFourRightAngles(const std::vector<double> &points) {
-    //check if point 1 is a right angle by matching x of second point and y of fourth point
-    if (points[6] != 0 || points[3] != 0) return false;
-
-    //check if point 3 is a right angle by matching x of fourth point and y of second point
-    if (points[4] != points[2] || points[5] != points[7]) return false;
-
-    return true; //default return if none of if statement triggered
+    //check if point1 is a right angle by matching y of point2 and x of point4; because parallel, the other sides must match
+    return points[6] == 0 && points[3] == 0;
 }
 
 

@@ -10,10 +10,8 @@
  * @param errorNumber
  */
 void errorType(int errorNumber); //todo possibly change the return value of this function
-bool isInvalidCharacter(std::string inputString);
-bool hasInvalidCharacters(const std::vector<double> &points);
 bool hasPointsThatCoincide(const std::vector<double> &points);
-bool hasCrossingLineSegments(const std::vector<double> &points);
+bool hasCrossingLineSegments(int aX, int aY, int bX, int bY, int cX, int cY, int dX, int dY);
 bool hasThreeColinearPoints(const std::vector<double> &points);
 
 

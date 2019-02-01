@@ -14,33 +14,41 @@
     <list default="true" id="85b148d0-07e9-47de-901a-76c545dc0587" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coverage_Review_assignment3.pages" beforeDir="false" afterPath="$PROJECT_DIR$/Coverage_Review_assignment3.pages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Errors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Errors.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Errors.h" beforeDir="false" afterPath="$PROJECT_DIR$/Errors.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParallelAndCongruentFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ParallelAndCongruentFunctions.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/a.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anotherAttempt.sh" beforeDir="false" afterPath="$PROJECT_DIR$/anotherAttempt.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/CrossingLineSegTest_out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/CrossingLineSegTest_out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/InvalidBig_out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/InvalidBig_out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/InvalidCharacters_out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/InvalidCharacters_out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/InvalidDoublePrecion_out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/InvalidDoublePrecion_out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/InvalidDoubleWOLeadingZero_out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/InvalidDoubleWOLeadingZero_out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/InvalidDouble_out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/InvalidDouble_out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/InvalidFloat_out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/InvalidFloat_out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/InvalidLongs_out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/InvalidLongs_out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/InvalidNegatives_out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/InvalidNegatives_out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/InvalidNull_out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/InvalidNull_out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/InvalidPeriod_out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/InvalidPeriod_out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/InvalidReturns_out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/InvalidReturns_out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/ThreeColinearTest_out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/ThreeColinearTest_out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/TriangleWithLineTest_out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/TriangleWithLineTest_out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/blank.profdata" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/blank.profdata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/blank_out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/blank_out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/testCasesByLine_out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/testCasesByLine_out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/Errors.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/Errors.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/ParallelAndCongruentFunctions.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/ParallelAndCongruentFunctions.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/assignment3" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/assignment3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/results.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/CrossingLineSegTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/CrossingLineSegTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/default.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/default.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e1.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e1.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e10.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e10.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e11.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e11.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e12.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e12.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e13.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e13.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e14.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e14.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e15.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e15.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e16.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e16.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e17.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e17.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e18.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e18.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e2.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e3.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e3.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e4.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e4.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e5.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e5.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e6.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e6.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e7.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e7.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e8.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e8.profraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e9.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e9.profraw" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quadrilateralClassifier" beforeDir="false" afterPath="$PROJECT_DIR$/quadrilateralClassifier" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quadrilateralClassifier.profdata" beforeDir="false" afterPath="$PROJECT_DIR$/quadrilateralClassifier.profdata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCasesExtended.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testCasesExtended.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingScript.sh" beforeDir="false" afterPath="$PROJECT_DIR$/testingScript.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCases.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/testCases.rtf" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,11 +60,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="82" selection-start-line="82" selection-end-line="82" />
+            <state relative-caret-position="164">
+              <caret line="30" selection-start-line="30" selection-end-line="31" selection-end-column="122" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -65,19 +73,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ParallelAndCongruentFunctions.h">
+        <entry file="file://$PROJECT_DIR$/Errors.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="259">
+              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+              <folding>
+                <element signature="e#46#65#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Errors.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#59#76#0" expanded="true" />
               </folding>
@@ -86,22 +97,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Errors.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-              <folding>
-                <element signature="e#46#65#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FilterFunctions.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#43#71#0" expanded="true" />
               </folding>
@@ -112,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParallelAndCongruentFunctions.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+            <state relative-caret-position="326">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#43#62#0" expanded="true" />
               </folding>
@@ -127,6 +126,8 @@
     <findStrings>
       <find>Parall</find>
       <find>hascross</find>
+      <find>hasfour</find>
+      <find>isIn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,14 +142,15 @@
         <option value="$PROJECT_DIR$/FilterFunctions.h" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Errors.h" />
         <option value="$PROJECT_DIR$/ParallelAndCongruentFunctions.h" />
         <option value="$PROJECT_DIR$/ParallelAndCongruentFunctions.cpp" />
-        <option value="$PROJECT_DIR$/Errors.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Errors.cpp" />
+        <option value="$PROJECT_DIR$/Errors.h" />
       </list>
     </option>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
     <option name="x" value="1" />
     <option name="y" value="42" />
@@ -211,7 +213,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="assignment3" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/coverage/InvalidCharacters.txt" PASS_PARENT_ENVS_2="true" PROJECT_NAME="assignment3" TARGET_NAME="assignment3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="assignment3" RUN_TARGET_NAME="assignment3">
+    <configuration name="assignment3" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="101 2 3 4 5 6" PASS_PARENT_ENVS_2="true" PROJECT_NAME="assignment3" TARGET_NAME="assignment3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="assignment3" RUN_TARGET_NAME="assignment3">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -243,12 +245,12 @@
       <workItem from="1548723492276" duration="596000" />
       <workItem from="1548775961425" duration="563000" />
       <workItem from="1548778230253" duration="273000" />
-      <workItem from="1548799923336" duration="21629000" />
+      <workItem from="1548799923336" duration="34062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69016000" />
+    <option name="totallyTimeSpent" value="81449000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="42" width="1398" height="777" extended-state="0" />
@@ -258,8 +260,8 @@
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="CPU Profiler" weight="0.7751825" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21459854" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329927" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21459854" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -284,20 +286,12 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>23</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/FilterFunctions.cpp</url>
+          <line>12</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="CMakeRunConfiguration">
-        <watch expression="slopeToCompare1" language="ObjectiveC" />
-        <watch expression="slopeToCompare2" language="ObjectiveC" />
-        <watch expression="dx" language="ObjectiveC" />
-        <watch expression="dy" language="ObjectiveC" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -384,16 +378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FilterFunctions.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <element signature="e#43#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
@@ -415,40 +399,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParallelAndCongruentFunctions.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
-          <folding>
-            <element signature="e#43#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Errors.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-          <folding>
-            <element signature="e#59#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ParallelAndCongruentFunctions.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Errors.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-          <folding>
-            <element signature="e#46#65#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -459,12 +413,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FilterFunctions.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#43#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParallelAndCongruentFunctions.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#43#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="164">
+          <caret line="30" selection-start-line="30" selection-end-line="31" selection-end-column="122" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Errors.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <element signature="e#46#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Errors.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#59#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
