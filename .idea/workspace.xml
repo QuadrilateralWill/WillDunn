@@ -13,42 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="85b148d0-07e9-47de-901a-76c545dc0587" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Coverage_Review_assignment3.pages" beforeDir="false" afterPath="$PROJECT_DIR$/Coverage_Review_assignment3.pages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Errors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Errors.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Errors.h" beforeDir="false" afterPath="$PROJECT_DIR$/Errors.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParallelAndCongruentFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ParallelAndCongruentFunctions.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/a.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anotherAttempt.sh" beforeDir="false" afterPath="$PROJECT_DIR$/anotherAttempt.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/Errors.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/Errors.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/ParallelAndCongruentFunctions.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/ParallelAndCongruentFunctions.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/assignment3" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/assignment3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/results.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/CrossingLineSegTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/CrossingLineSegTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/default.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/default.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e1.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e1.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e10.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e10.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e11.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e11.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e12.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e12.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e13.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e13.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e14.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e14.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e15.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e15.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e16.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e16.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e17.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e17.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e18.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e18.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e2.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e3.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e3.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e4.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e4.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e5.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e5.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e6.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e6.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e7.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e7.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e8.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e8.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e9.profraw" beforeDir="false" afterPath="$PROJECT_DIR$/e9.profraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quadrilateralClassifier" beforeDir="false" afterPath="$PROJECT_DIR$/quadrilateralClassifier" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quadrilateralClassifier.profdata" beforeDir="false" afterPath="$PROJECT_DIR$/quadrilateralClassifier.profdata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCases.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/testCases.rtf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coverage_Review_assignment3_pdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Coverage_Review_assignment3_pdf.pdf" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -245,12 +211,12 @@
       <workItem from="1548723492276" duration="596000" />
       <workItem from="1548775961425" duration="563000" />
       <workItem from="1548778230253" duration="273000" />
-      <workItem from="1548799923336" duration="34062000" />
+      <workItem from="1548799923336" duration="34358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81449000" />
+    <option name="totallyTimeSpent" value="81745000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="42" width="1398" height="777" extended-state="0" />
