@@ -1,8 +1,4 @@
-import subprocess
 import os
-
-#subprocess.call('cd ..', shell=True)
-#subprocess.call('ls  "/Users/willdunn/WillDunn/quadTestGen"', shell=True)
 
 #delete all old tests
 os.chdir('/Users/willdunn/WillDunn/quadTestGen/tests'); #change the directory to the location holding the old tests todo might not be needed
@@ -21,16 +17,23 @@ os.chdir('/Users/willdunn/WillDunn') #go back to the higher folder to build the 
 os.system('clang++ -fprofile-instr-generate -fcoverage-mapping main.cpp ParallelAndCongruentFunctions.cpp Errors.cpp '
           'FilterFunctions.cpp -o quadrilateralClassifier')
 
+os.system("touch ./coverage/quadrilateralClassifier.profdata")
+os.system("touch ./default.profraw")
+lastFile = "quadrilateralClassifier"
+os.system("LLVM_PROFILE_FILE=\"./coverage/" + lastFile + ".profraw\" ./quadrilateralClassifier")
+directory = os.fsencode("/Users/willdunn/WillDunn/quadTestGen/tests")
+
 #loop through each file in the test directory and create the profraws
-for filename in os.curdir:
+for file in os.listdir(directory):
+    filename = os.path.splitext(os.fsdecode(file))[0]
     currentFile = filename;
-    os.system('LLVM_PROFILE_FILE="coverage/$(currentFile).profraw" ./quadrilateralClassifier tests/$(currentFile).txt')
-    os.system('xcrun llvm-profdata merge -sparse coverage/$(lastFile).profraw coverage/$(currentFile).profraw -o quadrilateralClassifier.profdata')
-    lastFile = filename;
+    os.system("LLVM_PROFILE_FILE=\"coverage/" + currentFile + ".profraw\" ./quadrilateralClassifier " + currentFile + ".txt")
+    os.system("xcrun llvm-profdata merge -sparse coverage/" + lastFile + ".profdata coverage/" + currentFile + ".profraw -o coverage/" + currentFile + ".profdata")
+    lastFile = filename
 
-os.system('xcrun llvm-cov show ./quadrilateralClassifier -instr-profile=./coverage/$(lastFile).profdata')
+os.system("xcrun llvm-cov show ./quadrilateralClassifier -instr-profile=./coverage/" + lastFile + ".profdata > coverage.txt")
 
-#todo if this shtuff doesn't run, mayhap remove the ./ from the non executable files
+#todo figure out how to output to the file to coverage.txt
 
 #run the tests and ensure that all pass while also getting coverage
 
