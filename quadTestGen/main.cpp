@@ -51,12 +51,7 @@ int main() {
             if (i % 3 == 0) { //append ()
                 fileToWriteTo << "(" << randomNum << ") ";
             } else if (i % 4 == 0) { //append spaces
-                randomSpaces = rand() % 7;
-                std::string spaces;
-                for (int x = 0; x < randomSpaces; x++) {
-                    spaces.append(" ");
-                }
-                fileToWriteTo << spaces << randomNum << spaces;
+
             } else { //append following decimal -> I.e., 1. or 5.
                 fileToWriteTo << randomNum << ". ";
             }

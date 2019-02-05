@@ -11,58 +11,57 @@
    10|    416|    switch (errorNumber) {
    11|    416|        case 1:
    12|    416|            std::cout
-   13|    416|                    << "Error 1 - the line contains the wrong number of points, contains invalid characters, has coordinates out "
-   14|    416|                       "of the range 0..100, or otherwise fails to describe three points (six integer values).\n";
-   15|    416|            exit(-1);
-   16|    416|        case 2:
-   17|      0|            std::cout << "Error 2 - two points collide.\n";
-   18|      0|            exit(-1);
-   19|    416|        case 3:
-   20|      0|            std::cout << "Error 3 - two line segments representing sides cross each other.\n";
-   21|      0|            exit(-1);
-   22|    416|        case 4:
-   23|      0|            std::cout << "Error 4 - three points are colinear\n";
-   24|      0|            exit(-1);
-   25|    416|    }
-   26|    416|}
-   27|       |
-   28|  1.15k|bool hasPointsThatCoincide(const std::vector<double> &points) {
-   29|  5.78k|    for (int i = 0; i < points.size() - 1; i += 2) {
-   30|  18.4k|        for (int j = 2; j < points.size() - 1; j += 2) { //starting at two because you will start on the second point
-   31|  13.8k|            //check if the x-coordinate overlaps
-   32|  13.8k|            if (points[i] == points[j] && i != j) {
-   33|  1.28k|                //if so, check for an overlapping y-coordinate
-   34|  1.28k|                if (points[i + 1] == points[j + 1]) return true;
-   35|  1.28k|            }
-   36|  13.8k|        }
-   37|  4.62k|    }
-   38|  1.15k|    return false;
-   39|  1.15k|}
-   40|       |
-   41|  2.31k|bool hasCrossingLineSegments(int aX, int aY, int bX, int bY, int cX, int cY, int dX, int dY) {
-   42|  2.31k|    return (((cX-aX)*(bY-aY) - (cY-aY)*(bX-aX))
-   43|  2.31k|            * ((dX-aX)*(bY-aY) - (dY-aY)*(bX-aX)) < 0)
-   44|  2.31k|           &&
-   45|  2.31k|           (((aX-cX)*(dY-cY) - (aY-cY)*(dX-cX))
-   46|      0|            * ((bX-cX)*(dY-cY) - (bY-cY)*(dX-cX)) < 0);
-   47|  2.31k|}
-   48|       |
-   49|       |/**
-   50|       | * See if the
-   51|       | * @param points
-   52|       | * @return
-   53|       | */
-   54|  1.15k|bool hasThreeColinearPoints(const std::vector<double> &points) {
-   55|  1.15k|    //check if co-linearity of 1,2,3 is same and 2,3,4.  If either is true, return true.
-   56|  1.15k|    double val = (points[3] - points[1]) * (points[4] - points[2]) - (points[2] - points[0]) * (points[5] - points[3]);
-   57|  1.15k|    if (val == 0) {
-   58|      0|        return ((points[5] - points[3]) * (points[6] - points[4]) -
-   59|      0|                (points[4] - points[2]) * (points[7] - points[5])) == 0;
-   60|      0|    }
-   61|  1.15k|
-   62|  1.15k|    return false;
-   63|  1.15k|
-   64|  1.15k|}
+   13|    416|                    << "error 1";
+   14|    416|            exit(-1);
+   15|    416|        case 2:
+   16|      0|            std::cout << "error 2";
+   17|      0|            exit(-1);
+   18|    416|        case 3:
+   19|      0|            std::cout << "error 3";
+   20|      0|            exit(-1);
+   21|    416|        case 4:
+   22|      0|            std::cout << "error 4";
+   23|      0|            exit(-1);
+   24|    416|    }
+   25|    416|}
+   26|       |
+   27|  1.15k|bool hasPointsThatCoincide(const std::vector<double> &points) {
+   28|  5.78k|    for (int i = 0; i < points.size() - 1; i += 2) {
+   29|  18.4k|        for (int j = 2; j < points.size() - 1; j += 2) { //starting at two because you will start on the second point
+   30|  13.8k|            //check if the x-coordinate overlaps
+   31|  13.8k|            if (points[i] == points[j] && i != j) {
+   32|  1.28k|                //if so, check for an overlapping y-coordinate
+   33|  1.28k|                if (points[i + 1] == points[j + 1]) return true;
+   34|  1.28k|            }
+   35|  13.8k|        }
+   36|  4.62k|    }
+   37|  1.15k|    return false;
+   38|  1.15k|}
+   39|       |
+   40|  2.31k|bool hasCrossingLineSegments(int aX, int aY, int bX, int bY, int cX, int cY, int dX, int dY) {
+   41|  2.31k|    return (((cX-aX)*(bY-aY) - (cY-aY)*(bX-aX))
+   42|  2.31k|            * ((dX-aX)*(bY-aY) - (dY-aY)*(bX-aX)) < 0)
+   43|  2.31k|           &&
+   44|  2.31k|           (((aX-cX)*(dY-cY) - (aY-cY)*(dX-cX))
+   45|      0|            * ((bX-cX)*(dY-cY) - (bY-cY)*(dX-cX)) < 0);
+   46|  2.31k|}
+   47|       |
+   48|       |/**
+   49|       | * See if the points overlap
+   50|       | * @param points
+   51|       | * @return true if 3 points overlap
+   52|       | */
+   53|  1.15k|bool hasThreeColinearPoints(const std::vector<double> &points) {
+   54|  1.15k|    //check if co-linearity of 1,2,3 is same and 2,3,4.  If either is true, return true.
+   55|  1.15k|    double val = (points[3] - points[1]) * (points[4] - points[2]) - (points[2] - points[0]) * (points[5] - points[3]);
+   56|  1.15k|    if (val == 0) {
+   57|      0|        return ((points[5] - points[3]) * (points[6] - points[4]) -
+   58|      0|                (points[4] - points[2]) * (points[7] - points[5])) == 0;
+   59|      0|    }
+   60|  1.15k|
+   61|  1.15k|    return false;
+   62|  1.15k|
+   63|  1.15k|}
 
 /Users/willdunn/WillDunn/FilterFunctions.cpp:
     1|       |//
@@ -204,14 +203,14 @@
    16|       | * @param argv
    17|       | *  -contains four points (the first being 0,0), which make up a quadrilateral, with a space between each point.
    18|       | */
-   19|    995|int main(int argc, char *argv[]) {
-   20|    995|    //if(argc < 2) errorType(1); //todo was causing issues with the bashscript triggering here at almost every test
-   21|    995|
-   22|    995|    //deal with input .txt
-   23|    995|    if (argc == 2) {
-   24|    995|        examineFile(argc, argv); //arg[0]: name of this program; arg[1]: input file
-   25|    995|        return 0;
-   26|    995|    }
+   19|    994|int main(int argc, char *argv[]) {
+   20|    994|    //if(argc < 2) errorType(1); //todo was causing issues with the bashscript triggering here at almost every test
+   21|    994|
+   22|    994|    //deal with input .txt
+   23|    994|    if (argc == 2) {
+   24|    994|        examineFile(argc, argv); //arg[0]: name of this program; arg[1]: input file
+   25|    994|        return 0;
+   26|    994|    }
    27|      0|    std::vector<double> points{0, 0}; //the first point will always be (0, 0)
    28|      0|
    29|      0|    //fill vector with points from arguments
@@ -221,7 +220,7 @@
    33|      0|        try {
    34|      0|            std::string strToConvertToDecimal = argv[argIter]; //zero added to ensure a find() result of 0 means unfound '.'
    35|      0|            if (std::stod(strToConvertToDecimal) > 100 || std::stod(strToConvertToDecimal) < 0) errorType(1); //the point is out of range
-   36|      0|            else if(std::stod(strToConvertToDecimal) - (int) std::stod(strToConvertToDecimal) != 0) errorType(1);
+   36|      0|            else if(std::stod(strToConvertToDecimal) - (int) std::stod(strToConvertToDecimal) != 0) errorType(1); //checks to ensure it's an int
    37|      0|            points.push_back(std::stod(strToConvertToDecimal));
    38|      0|        } catch (const std::exception& e){
    39|      0|            errorType(1);
@@ -239,14 +238,14 @@
    51|       | * @param argc
    52|       | * @param argv
    53|       | */
-   54|    995|void examineFile(int argc, char *argv[]) {
-   55|    995|    std::vector<double> points; //the first point will always be (0, 0)
-   56|    995|    std::ofstream outputFile;
-   57|    995|    outputFile.open("results.txt");
-   58|    995|
-   59|    995|    //get the points from the .txt
-   60|    995|    std::ifstream inputFile(argv[1]); //grab .txt argument
-   61|    995|    std::string currLine;
+   54|    994|void examineFile(int argc, char *argv[]) {
+   55|    994|    std::vector<double> points; //the first point will always be (0, 0)
+   56|    994|    std::ofstream outputFile;
+   57|    994|    outputFile.open("results.txt");
+   58|    994|
+   59|    994|    //get the points from the .txt
+   60|    994|    std::ifstream inputFile(argv[1]); //grab .txt argument
+   61|    994|    std::string currLine;
    62|  1.67k|    while (std::getline(inputFile, currLine)) {
    63|    994|        points.push_back(0); //fill first two points with 0s
    64|    994|        points.push_back(0);
@@ -255,21 +254,21 @@
    67|    994|        //loop through the current line to separate numbers
    68|  12.1k|        for (int linePosition = 0; linePosition < currLine.size(); linePosition++) {
    69|  12.0k|            if (isspace(currLine[linePosition])) {
-   70|  3.96k|                try {
-   71|  3.96k|                    if (std::stod(num) > 100 || std::stod(num) < 0) errorType(1); //the point is out of range
-   72|  3.96k|                } catch (const std::exception& e){
+   70|  3.95k|                try {
+   71|  3.95k|                    if (std::stod(num) > 100 || std::stod(num) < 0) errorType(1); //the point is out of range
+   72|  3.95k|                } catch (const std::exception& e){
    73|    311|                    errorType(1);
    74|    311|                }
-   75|  3.96k|                points.push_back(std::stod(num));
-   76|  3.65k|                num = ""; //bookkeeping
-   77|  3.65k|                continue; //whitespace, so continue to next number
-   78|  8.12k|            } else if (linePosition == currLine.size() - 1) {
+   75|  3.95k|                points.push_back(std::stod(num));
+   76|  3.64k|                num = ""; //bookkeeping
+   77|  3.64k|                continue; //whitespace, so continue to next number
+   78|  8.13k|            } else if (linePosition == currLine.size() - 1) {
    79|    578|                num += currLine[linePosition];
    80|    578|                points.push_back(std::stod(num));
    81|    578|                break;
    82|    578|            }
-   83|  7.54k|            num += currLine[linePosition];
-   84|  7.54k|        }
+   83|  7.55k|            num += currLine[linePosition];
+   84|  7.55k|        }
    85|    994|        if(points.size() != 8) errorType(1); //the input doesn't contain the correct number of points
    86|    683|
    87|    683|        //process the points and write result to output file as well as outputting to the user
@@ -277,9 +276,9 @@
    89|    683|        std::cout << processPoints(points) << std::endl;
    90|    683|        points.clear(); //reset points so it doesn't fill with the points from the last argument line
    91|    683|    }
-   92|    995|    inputFile.close();
-   93|    684|    outputFile.close();
-   94|    684|}
+   92|    994|    inputFile.close();
+   93|    683|    outputFile.close();
+   94|    683|}
    95|       |
    96|       |/**
    97|       | * Processes the input and assigns it a state, based on hierarchy of quadrilaterals and the finite states they can take.
@@ -316,4 +315,4 @@
   128|  1.15k|    return typeOfQuad[quadState];
   129|  1.15k|}
 
-OK
+ERROR: NullSpace97 NullSpace83 NullSpace54 NullSpace40 NullSpace68 NullSpace140 NullSpace154 NullSpace168 NullSpace183 NullSpace4 NullSpace197 NullSpace196 NullSpace182 NullSpace5 NullSpace169 NullSpace155 NullSpace141 NullSpace69 NullSpace41 NullSpace55 NullSpace82 NullSpace96 NullSpace80 NullSpace94 NullSpace209 NullSpace43 NullSpace57 NullSpace157 NullSpace143 NullSpace194 NullSpace7 NullSpace180 NullSpace6 NullSpace181 NullSpace195 NullSpace142 NullSpace156 NullSpace56 NullSpace42 NullSpace208 NullSpace95 NullSpace81 NullSpace85 NullSpace91 NullSpace46 NullSpace52 NullSpace152 NullSpace146 NullSpace191 NullSpace185 NullSpace2 NullSpace184 NullSpace3 NullSpace190 NullSpace147 NullSpace153 NullSpace53 NullSpace47 NullSpace90 NullSpace84 NullSpace92 NullSpace86 NullSpace79 NullSpace51 NullSpace45 NullSpace179 NullSpace145 NullSpace151 NullSpace1 NullSpace186 NullSpace192 NullSpace193 NullSpace0 NullSpace187 NullSpace150 NullSpace144 NullSpace178 NullSpace44 NullSpace50 NullSpace78 NullSpace87 NullSpace93 NullSpace37 NullSpace23 NullSpace123 NullSpace137 NullSpace136 NullSpace122 NullSpace22 NullSpace36 NullSpace20 NullSpace34 NullSpace134 NullSpace120 NullSpace108 NullSpace109 NullSpace121 NullSpace135 NullSpace35 NullSpace21 NullSpace19 NullSpace25 NullSpace31 NullSpace119 NullSpace131 NullSpace125 NullSpace124 NullSpace130 NullSpace118 NullSpace30 NullSpace24 NullSpace18 NullSpace32 NullSpace26 NullSpace126 NullSpace132 NullSpace133 NullSpace127 NullSpace27 NullSpace33 NullSpace16 NullSpace102 NullSpace116 NullSpace117 NullSpace103 NullSpace17 NullSpace15 NullSpace29 NullSpace115 NullSpace101 NullSpace129 NullSpace128 NullSpace100 NullSpace114 NullSpace28 NullSpace14 NullSpace38 NullSpace10 NullSpace138 NullSpace110 NullSpace104 NullSpace105 NullSpace111 NullSpace139 NullSpace11 NullSpace39 NullSpace13 NullSpace107 NullSpace113 NullSpace112 NullSpace106 NullSpace12 NullSpace203 NullSpace75 NullSpace61 NullSpace49 NullSpace161 NullSpace175 NullSpace149 NullSpace148 NullSpace174 NullSpace160 NullSpace48 NullSpace60 NullSpace74 NullSpace202 NullSpace200 NullSpace89 NullSpace62 NullSpace76 NullSpace176 NullSpace162 NullSpace189 NullSpace188 NullSpace163 NullSpace177 NullSpace77 NullSpace63 NullSpace88 NullSpace201 NullSpace98 NullSpace205 NullSpace67 NullSpace73 NullSpace173 NullSpace167 NullSpace198 NullSpace199 NullSpace166 NullSpace172 NullSpace72 NullSpace66 NullSpace204 NullSpace99 NullSpace206 NullSpace58 NullSpace70 NullSpace64 NullSpace158 NullSpace164 NullSpace170 NullSpace8 NullSpace9 NullSpace171 NullSpace165 NullSpace159 NullSpace65 NullSpace71 NullSpace59 NullSpace207 

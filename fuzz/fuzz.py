@@ -32,8 +32,12 @@ def generateTestCoverage(optimizationNum):
         nuFilename = ''.join(i for i in filename if not i.isdigit())  # removes digits from test name
         if (nuFilename == '.DS_Store'): continue
         diff = os.system('cmp --silent compare.txt /correctResults/' + nuFilename + '.txt')
-        if (diff == 1):
-            failedTests += filename + " "
+        if(nuFilename == 'NullSpace'):
+            if (diff != 1):
+                failedTests += filename + " "
+        else:
+            if (diff == 1):
+                failedTests += filename + " "
         os.system(
             "xcrun llvm-profdata merge -sparse ./coverage/" + lastFile + ".profdata ./coverage/" + filename + ".profraw -o ./coverage/" + filename + ".profdata")
         lastFile = filename
@@ -56,6 +60,6 @@ generateTestCoverage('1')
 generateTestCoverage('2')
 generateTestCoverage('3')
 os.system(
-    'cmp --silent coverage1.txt coverage2.txt && echo "Optimization is the same" || echo "Coverage 1 and 2 differ!\n"')
+    'cmp --silent coverage1.txt coverage2.txt && echo "Optimization is the same\n" || echo "Coverage 1 and 2 differ!\n"')
 os.system(
-    'cmp --silent coverage1.txt coverage3.txt && echo "Optimization is the same" || echo "Coverage 1 and 3 differ!\n"')
+    'cmp --silent coverage1.txt coverage3.txt && echo "Optimization is the same\n" || echo "Coverage 1 and 3 differ!\n"')

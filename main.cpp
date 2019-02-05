@@ -19,8 +19,8 @@ std::string processPoints(const std::vector<double> &points);
 int main(int argc, char *argv[]) {
     //if(argc < 2) errorType(1); //todo was causing issues with the bashscript triggering here at almost every test
 
-    //deal with input .txt
-    if (argc == 2) {
+    //deal with input < .txt
+    if (argc == 3) {
         examineFile(argc, argv); //arg[0]: name of this program; arg[1]: input file
         return 0;
     }
@@ -57,7 +57,7 @@ void examineFile(int argc, char *argv[]) {
     outputFile.open("results.txt");
 
     //get the points from the .txt
-    std::ifstream inputFile(argv[1]); //grab .txt argument
+    std::ifstream inputFile(argv[2]); //grab .txt argument
     std::string currLine;
     while (std::getline(inputFile, currLine)) {
         points.push_back(0); //fill first two points with 0s

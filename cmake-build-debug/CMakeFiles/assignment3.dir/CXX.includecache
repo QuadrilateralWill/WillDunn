@@ -6,35 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/willdunn/WillDunn/Errors.cpp
-iostream
--
-Errors.h
-/Users/willdunn/WillDunn/Errors.h
-ParallelAndCongruentFunctions.h
-/Users/willdunn/WillDunn/ParallelAndCongruentFunctions.h
-
 /Users/willdunn/WillDunn/Errors.h
 vector
 -
 string
 -
 
-/Users/willdunn/WillDunn/FilterFunctions.cpp
-FilterFunctions.h
-/Users/willdunn/WillDunn/FilterFunctions.h
-ParallelAndCongruentFunctions.h
-/Users/willdunn/WillDunn/ParallelAndCongruentFunctions.h
-
 /Users/willdunn/WillDunn/FilterFunctions.h
 vector
 -
-
-/Users/willdunn/WillDunn/ParallelAndCongruentFunctions.cpp
-iostream
--
-ParallelAndCongruentFunctions.h
-/Users/willdunn/WillDunn/ParallelAndCongruentFunctions.h
 
 /Users/willdunn/WillDunn/ParallelAndCongruentFunctions.h
 vector
