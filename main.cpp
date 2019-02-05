@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
         try {
             std::string strToConvertToDecimal = argv[argIter]; //zero added to ensure a find() result of 0 means unfound '.'
             if (std::stod(strToConvertToDecimal) > 100 || std::stod(strToConvertToDecimal) < 0) errorType(1); //the point is out of range
-            else if(std::stod(strToConvertToDecimal) - (int) std::stod(strToConvertToDecimal) != 0) errorType(1);
+            else if(std::stod(strToConvertToDecimal) - (int) std::stod(strToConvertToDecimal) != 0) errorType(1); //checks to ensure it's an int
             points.push_back(std::stod(strToConvertToDecimal));
         } catch (const std::exception& e){
             errorType(1);

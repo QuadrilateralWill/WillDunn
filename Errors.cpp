@@ -10,17 +10,16 @@ void errorType(int errorNumber) {
     switch (errorNumber) {
         case 1:
             std::cout
-                    << "Error 1 - the line contains the wrong number of points, contains invalid characters, has coordinates out "
-                       "of the range 0..100, or otherwise fails to describe three points (six integer values).\n";
+                    << "error 1";
             exit(-1);
         case 2:
-            std::cout << "Error 2 - two points collide.\n";
+            std::cout << "error 2";
             exit(-1);
         case 3:
-            std::cout << "Error 3 - two line segments representing sides cross each other.\n";
+            std::cout << "error 3";
             exit(-1);
         case 4:
-            std::cout << "Error 4 - three points are colinear\n";
+            std::cout << "error 4";
             exit(-1);
     }
 }
@@ -47,9 +46,9 @@ bool hasCrossingLineSegments(int aX, int aY, int bX, int bY, int cX, int cY, int
 }
 
 /**
- * See if the
+ * See if the points overlap
  * @param points
- * @return
+ * @return true if 3 points overlap
  */
 bool hasThreeColinearPoints(const std::vector<double> &points) {
     //check if co-linearity of 1,2,3 is same and 2,3,4.  If either is true, return true.
