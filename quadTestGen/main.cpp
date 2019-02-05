@@ -46,15 +46,14 @@ int main() {
         std::string fileName = "/Users/willdunn/WillDunn/quadTestGen/tests/NullSpace" + std::to_string(i) + ".txt";
         fileToWriteTo.open(fileName);
         if (!fileToWriteTo) exit(0);
-        for (int j = 0; j < 7; j++) { //seven because our valid input files have six ints
-            randomNum = rand() % 100;
-            if (i % 3 == 0) { //append ()
-                fileToWriteTo << "(" << randomNum << ") ";
-            } else if (i % 4 == 0) { //append spaces
-
-            } else { //append following decimal -> I.e., 1. or 5.
-                fileToWriteTo << randomNum << ". ";
+        for (int j = 0; j < 6; j++) { //six because our valid input files have six ints
+            randomSpaces = rand() % 7;
+            std::string spaces = " ";
+            for (int x = 0; x < randomSpaces; x++) {
+                spaces.append(" ");
             }
+            randomNum = rand() % 100;
+            fileToWriteTo << spaces << randomNum << spaces;
         }
         fileToWriteTo.close();
     }

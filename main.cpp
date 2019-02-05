@@ -85,8 +85,8 @@ void examineFile(int argc, char *argv[]) {
         if(points.size() != 8) errorType(1); //the input doesn't contain the correct number of points
 
         //process the points and write result to output file as well as outputting to the user
-        outputFile << processPoints(points) << std::endl;
-        std::cout << processPoints(points) << std::endl;
+        outputFile << processPoints(points);
+        std::cout << processPoints(points);
         points.clear(); //reset points so it doesn't fill with the points from the last argument line
     }
     inputFile.close();

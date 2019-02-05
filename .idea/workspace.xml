@@ -14,10 +14,6 @@
     <list default="true" id="85b148d0-07e9-47de-901a-76c545dc0587" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/Errors.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/Errors.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/assignment3" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/assignment3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/results.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compare.txt" beforeDir="false" afterPath="$PROJECT_DIR$/compare.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/ASCII1.profdata" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/ASCII1.profdata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/ASCII10.profdata" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/ASCII10.profdata" afterDir="false" />
@@ -1016,9 +1012,10 @@
       <change beforePath="$PROJECT_DIR$/coverage1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fuzz/fuzz.py" beforeDir="false" afterPath="$PROJECT_DIR$/fuzz/fuzz.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/quadTestGen" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/quadTestGen" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quadTestGen/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quadTestGen/testGen" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/testGen" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quadTestGen/tests/ASCII1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/tests/ASCII1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quadTestGen/tests/ASCII10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/tests/ASCII10.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quadTestGen/tests/ASCII100.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/tests/ASCII100.txt" afterDir="false" />
@@ -1436,7 +1433,6 @@
       <change beforePath="$PROJECT_DIR$/quadTestGen/tests/NullSpace98.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/tests/NullSpace98.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quadTestGen/tests/NullSpace99.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/tests/NullSpace99.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quadrilateralClassifier" beforeDir="false" afterPath="$PROJECT_DIR$/quadrilateralClassifier" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1451,8 +1447,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="84" column="71" lean-forward="true" selection-start-line="84" selection-start-column="71" selection-end-line="84" selection-end-column="71" />
+            <state relative-caret-position="394">
+              <caret line="87" column="43" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -1636,12 +1632,12 @@
       <workItem from="1549323223118" duration="113000" />
       <workItem from="1549323401083" duration="28000" />
       <workItem from="1549331314913" duration="5582000" />
-      <workItem from="1549390593328" duration="1679000" />
+      <workItem from="1549390593328" duration="1984000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91130000" />
+    <option name="totallyTimeSpent" value="91435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="42" width="1398" height="777" extended-state="0" />
@@ -1843,8 +1839,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="84" column="71" lean-forward="true" selection-start-line="84" selection-start-column="71" selection-end-line="84" selection-end-column="71" />
+        <state relative-caret-position="394">
+          <caret line="87" column="43" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
         </state>
       </provider>
     </entry>
