@@ -14,9 +14,10 @@
     <list default="true" id="85b148d0-07e9-47de-901a-76c545dc0587" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/anotherAttempt.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/Errors.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/assignment3.dir/Errors.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/assignment3" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/assignment3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/results.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/.DS_Store.profdata" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.DS_Store.profdata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/ASCII1.profdata" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/ASCII1.profdata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/ASCII10.profdata" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/ASCII10.profdata" afterDir="false" />
@@ -1012,17 +1013,9 @@
       <change beforePath="$PROJECT_DIR$/coverage/Trapezoid85.profdata" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Trapezoid85.profdata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/Trapezoid86.profdata" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Trapezoid86.profdata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/Trapezoid9.profdata" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/Trapezoid9.profdata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/CMakeFiles/quadTestGen.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/CMakeFiles/quadTestGen.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/CMakeFiles/quadTestGen.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/CMakeFiles/quadTestGen.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/quadTestGen.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/quadTestGen.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/coverage1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fuzz/fuzz.py" beforeDir="false" afterPath="$PROJECT_DIR$/fuzz/fuzz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/quadTestGen" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/cmake-build-debug/quadTestGen" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quadTestGen/tests/ASCII1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/tests/ASCII1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quadTestGen/tests/ASCII10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/tests/ASCII10.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quadTestGen/tests/ASCII100.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/tests/ASCII100.txt" afterDir="false" />
@@ -1439,11 +1432,7 @@
       <change beforePath="$PROJECT_DIR$/quadTestGen/tests/NullSpace97.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/tests/NullSpace97.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quadTestGen/tests/NullSpace98.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/tests/NullSpace98.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quadTestGen/tests/NullSpace99.txt" beforeDir="false" afterPath="$PROJECT_DIR$/quadTestGen/tests/NullSpace99.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quadrilateralClassifier.profdata" beforeDir="false" afterPath="$PROJECT_DIR$/quadrilateralClassifier.profdata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testAutomater/Automater.py" beforeDir="false" afterPath="$PROJECT_DIR$/testAutomater/Automater.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingScript.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingScript_Arguments.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quadrilateralClassifier" beforeDir="false" afterPath="$PROJECT_DIR$/quadrilateralClassifier" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1608,7 +1597,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="assignment3" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="101 2 3 4 5 6" PASS_PARENT_ENVS_2="true" PROJECT_NAME="assignment3" TARGET_NAME="assignment3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="assignment3" RUN_TARGET_NAME="assignment3">
+    <configuration name="assignment3" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/quadTestGen/tests/Kite80.txt" PASS_PARENT_ENVS_2="true" PROJECT_NAME="assignment3" TARGET_NAME="assignment3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="assignment3" RUN_TARGET_NAME="assignment3">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -1648,21 +1637,22 @@
       <workItem from="1549323096157" duration="80000" />
       <workItem from="1549323223118" duration="113000" />
       <workItem from="1549323401083" duration="28000" />
+      <workItem from="1549331314913" duration="1142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83869000" />
+    <option name="totallyTimeSpent" value="85011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="42" width="1398" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49641576" visible="true" weight="0.14306785" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49641576" visible="true" weight="0.14528024" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329927" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21459854" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21459854" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

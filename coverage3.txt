@@ -253,8 +253,8 @@
    65|    994|        std::string num = "";
    66|    994|
    67|    994|        //loop through the current line to separate numbers
-   68|  12.2k|        for (int linePosition = 0; linePosition < currLine.size(); linePosition++) {
-   69|  12.1k|            if (isspace(currLine[linePosition])) {
+   68|  12.1k|        for (int linePosition = 0; linePosition < currLine.size(); linePosition++) {
+   69|  12.0k|            if (isspace(currLine[linePosition])) {
    70|  3.96k|                try {
    71|  3.96k|                    if (std::stod(num) > 100 || std::stod(num) < 0) errorType(1); //the point is out of range
    72|  3.96k|                } catch (const std::exception& e){
@@ -263,13 +263,13 @@
    75|  3.96k|                points.push_back(std::stod(num));
    76|  3.65k|                num = ""; //bookkeeping
    77|  3.65k|                continue; //whitespace, so continue to next number
-   78|  8.14k|            } else if (linePosition == currLine.size() - 1) {
+   78|  8.12k|            } else if (linePosition == currLine.size() - 1) {
    79|    578|                num += currLine[linePosition];
    80|    578|                points.push_back(std::stod(num));
    81|    578|                break;
    82|    578|            }
-   83|  7.56k|            num += currLine[linePosition];
-   84|  7.56k|        }
+   83|  7.54k|            num += currLine[linePosition];
+   84|  7.54k|        }
    85|    994|        if(points.size() != 8) errorType(1); //the input doesn't contain the correct number of points
    86|    683|
    87|    683|        //process the points and write result to output file as well as outputting to the user
@@ -316,3 +316,4 @@
   128|  1.15k|    return typeOfQuad[quadState];
   129|  1.15k|}
 
+OK
