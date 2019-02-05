@@ -17,12 +17,6 @@ os.chdir('/Users/willdunn/WillDunn')  # go back to the higher folder to build th
 
 def generateTestCoverage(optimizationNum):
     failedTests = "";
-    correctResults = {'NullSpace': 'Error 1 - invalid input', 'ASCII': 'Error 1 - invalid input',
-                      'Scalene': 'quadrilateral',
-                      'Quadrilateral': 'quadrilateral',
-                      'Square': 'square', 'Rhombus': 'rhombus', 'Rectangle': 'rectangle',
-                      'Parallelogram': 'parallelogram',
-                      'Trapezoid': 'trapezoid', 'Kite': 'kite', }
     os.system(
         'clang++ -fprofile-instr-generate -fcoverage-mapping main.cpp ParallelAndCongruentFunctions.cpp Errors.cpp '
         'FilterFunctions.cpp -O' + optimizationNum + ' -o quadrilateralClassifier')
@@ -36,26 +30,16 @@ def generateTestCoverage(optimizationNum):
         os.system(
             "LLVM_PROFILE_FILE=\"./coverage/" + filename + ".profraw\" ./quadrilateralClassifier quadTestGen/tests/" + filename + ".txt > compare.txt")
         nuFilename = ''.join(i for i in filename if not i.isdigit())  # removes digits from test name
-        diff = os.system('cmp --silent compare.txt /correctResults/' + nuFilename)
-        if(diff == 1):
+        if (nuFilename == '.DS_Store'): continue
+        diff = os.system('cmp --silent compare.txt /correctResults/' + nuFilename + '.txt')
+        if (diff == 1):
+            failedTests += filename + " "
         os.system(
             "xcrun llvm-profdata merge -sparse ./coverage/" + lastFile + ".profdata ./coverage/" + filename + ".profraw -o ./coverage/" + filename + ".profdata")
         lastFile = filename
         os.system(
             "xcrun llvm-cov show ./quadrilateralClassifier -instr-profile=./coverage/" + lastFile + ".profdata > coverage" +
             optimizationNum + ".txt")
-        # see if the test came out the way it should have using a dictionary
-        nuFilename = ''.join(i for i in filename if not i.isdigit())  # removes digits from test name
-        if (nuFilename == '.DS_Store'): continue
-        if (nuFilename != 'NullSpace' or nuFilename != 'ASCII'):  # normal shape
-            if (correctResults[nuFilename] != os.system('cat compare.txt')):
-                failedTests += filename + " "
-        elif (nuFilename == 'NullSpace'):
-            if (correctResults[nuFilename] == result):
-                failedTests += filename + " "
-        elif (nuFilename == 'ASCII'):
-            if (correctResults[nuFilename] != result):
-                failedTests += filename + " "
     # if a test didn't arrive at the correct result, print 'ERROR' at the base of the program.  Else, print 'OK'
     if (failedTests == ""):
         with open("coverage" + optimizationNum + ".txt", "a+") as myfile:
