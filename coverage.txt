@@ -263,13 +263,13 @@
    75|  3.95k|                points.push_back(std::stod(num));
    76|  3.64k|                num = ""; //bookkeeping
    77|  3.64k|                continue; //whitespace, so continue to next number
-   78|  8.13k|            } else if (linePosition == currLine.size() - 1) {
+   78|  8.12k|            } else if (linePosition == currLine.size() - 1) {
    79|    578|                num += currLine[linePosition];
    80|    578|                points.push_back(std::stod(num));
    81|    578|                break;
    82|    578|            }
-   83|  7.55k|            num += currLine[linePosition];
-   84|  7.55k|        }
+   83|  7.54k|            num += currLine[linePosition];
+   84|  7.54k|        }
    85|    994|        if(points.size() != 8) errorType(1); //the input doesn't contain the correct number of points
    86|    683|
    87|    683|        //process the points and write result to output file as well as outputting to the user
