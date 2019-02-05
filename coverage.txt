@@ -7,62 +7,62 @@
     6|       |#include "Errors.h"
     7|       |#include "ParallelAndCongruentFunctions.h"
     8|       |
-    9|       |void errorType(int errorNumber) {
-   10|       |    switch (errorNumber) {
-   11|       |        case 1:
-   12|       |            std::cout
-   13|       |                    << "Error 1 - the line contains the wrong number of points, contains invalid characters, has coordinates out "
-   14|       |                       "of the range 0..100, or otherwise fails to describe three points (six integer values).\n";
-   15|       |            exit(-1);
-   16|       |        case 2:
-   17|       |            std::cout << "Error 2 - two points collide.\n";
-   18|       |            exit(-1);
-   19|       |        case 3:
-   20|       |            std::cout << "Error 3 - two line segments representing sides cross each other.\n";
-   21|       |            exit(-1);
-   22|       |        case 4:
-   23|       |            std::cout << "Error 4 - three points are colinear\n";
-   24|       |            exit(-1);
-   25|       |    }
-   26|       |}
+    9|    416|void errorType(int errorNumber) {
+   10|    416|    switch (errorNumber) {
+   11|    416|        case 1:
+   12|    416|            std::cout
+   13|    416|                    << "Error 1 - the line contains the wrong number of points, contains invalid characters, has coordinates out "
+   14|    416|                       "of the range 0..100, or otherwise fails to describe three points (six integer values).\n";
+   15|    416|            exit(-1);
+   16|    416|        case 2:
+   17|      0|            std::cout << "Error 2 - two points collide.\n";
+   18|      0|            exit(-1);
+   19|    416|        case 3:
+   20|      0|            std::cout << "Error 3 - two line segments representing sides cross each other.\n";
+   21|      0|            exit(-1);
+   22|    416|        case 4:
+   23|      0|            std::cout << "Error 4 - three points are colinear\n";
+   24|      0|            exit(-1);
+   25|    416|    }
+   26|    416|}
    27|       |
-   28|      0|bool hasPointsThatCoincide(const std::vector<double> &points) {
-   29|      0|    for (int i = 0; i < points.size() - 1; i += 2) {
-   30|      0|        for (int j = 2; j < points.size() - 1; j += 2) { //starting at two because you will start on the second point
-   31|      0|            //check if the x-coordinate overlaps
-   32|      0|            if (points[i] == points[j] && i != j) {
-   33|      0|                //if so, check for an overlapping y-coordinate
-   34|      0|                if (points[i + 1] == points[j + 1]) return true;
-   35|      0|            }
-   36|      0|        }
-   37|      0|    }
-   38|      0|    return false;
-   39|      0|}
+   28|  1.15k|bool hasPointsThatCoincide(const std::vector<double> &points) {
+   29|  5.78k|    for (int i = 0; i < points.size() - 1; i += 2) {
+   30|  18.4k|        for (int j = 2; j < points.size() - 1; j += 2) { //starting at two because you will start on the second point
+   31|  13.8k|            //check if the x-coordinate overlaps
+   32|  13.8k|            if (points[i] == points[j] && i != j) {
+   33|  1.28k|                //if so, check for an overlapping y-coordinate
+   34|  1.28k|                if (points[i + 1] == points[j + 1]) return true;
+   35|  1.28k|            }
+   36|  13.8k|        }
+   37|  4.62k|    }
+   38|  1.15k|    return false;
+   39|  1.15k|}
    40|       |
-   41|      0|bool hasCrossingLineSegments(int aX, int aY, int bX, int bY, int cX, int cY, int dX, int dY) {
-   42|      0|    return (((cX-aX)*(bY-aY) - (cY-aY)*(bX-aX))
-   43|      0|            * ((dX-aX)*(bY-aY) - (dY-aY)*(bX-aX)) < 0)
-   44|      0|           &&
-   45|      0|           (((aX-cX)*(dY-cY) - (aY-cY)*(dX-cX))
+   41|  2.31k|bool hasCrossingLineSegments(int aX, int aY, int bX, int bY, int cX, int cY, int dX, int dY) {
+   42|  2.31k|    return (((cX-aX)*(bY-aY) - (cY-aY)*(bX-aX))
+   43|  2.31k|            * ((dX-aX)*(bY-aY) - (dY-aY)*(bX-aX)) < 0)
+   44|  2.31k|           &&
+   45|  2.31k|           (((aX-cX)*(dY-cY) - (aY-cY)*(dX-cX))
    46|      0|            * ((bX-cX)*(dY-cY) - (bY-cY)*(dX-cX)) < 0);
-   47|      0|}
+   47|  2.31k|}
    48|       |
    49|       |/**
    50|       | * See if the
    51|       | * @param points
    52|       | * @return
    53|       | */
-   54|      0|bool hasThreeColinearPoints(const std::vector<double> &points) {
-   55|      0|    //check if co-linearity of 1,2,3 is same and 2,3,4.  If either is true, return true.
-   56|      0|    double val = (points[3] - points[1]) * (points[4] - points[2]) - (points[2] - points[0]) * (points[5] - points[3]);
-   57|      0|    if (val == 0) {
+   54|  1.15k|bool hasThreeColinearPoints(const std::vector<double> &points) {
+   55|  1.15k|    //check if co-linearity of 1,2,3 is same and 2,3,4.  If either is true, return true.
+   56|  1.15k|    double val = (points[3] - points[1]) * (points[4] - points[2]) - (points[2] - points[0]) * (points[5] - points[3]);
+   57|  1.15k|    if (val == 0) {
    58|      0|        return ((points[5] - points[3]) * (points[6] - points[4]) -
    59|      0|                (points[4] - points[2]) * (points[7] - points[5])) == 0;
    60|      0|    }
-   61|      0|
-   62|      0|    return false;
-   63|      0|
-   64|      0|}
+   61|  1.15k|
+   62|  1.15k|    return false;
+   63|  1.15k|
+   64|  1.15k|}
 
 /Users/willdunn/WillDunn/FilterFunctions.cpp:
     1|       |//
@@ -72,19 +72,19 @@
     5|       |#include "FilterFunctions.h"
     6|       |#include "ParallelAndCongruentFunctions.h"
     7|       |
-    8|      0|int parallelogramFilter(const std::vector<double> &points) {
-    9|      0|    int quadState = 1;
-   10|      0|
-   11|      0|    //check for 4 congruent sides (not inclusive) to advance to rhombus state or stay at parallelogram
-   12|      0|    if (congruentSideCount(points) > 1) quadState = 3;
-   13|      0|    else if (hasFourRightAngles(points)) quadState = 2; //check non-rhombi parallelogram to see if rectangle
-   14|      0|
-   15|      0|    //check if rhombi is square
-   16|      0|    if (quadState == 3 && hasFourRightAngles(points)) quadState = 4;
-   17|      0|
-   18|      0|    //return the state the parallelogram reached
-   19|      0|    return quadState;
-   20|      0|}
+    8|    396|int parallelogramFilter(const std::vector<double> &points) {
+    9|    396|    int quadState = 1;
+   10|    396|
+   11|    396|    //check for 4 congruent sides (not inclusive) to advance to rhombus state or stay at parallelogram
+   12|    396|    if (congruentSideCount(points) > 1) quadState = 3;
+   13|    166|    else if (hasFourRightAngles(points)) quadState = 2; //check non-rhombi parallelogram to see if rectangle
+   14|    396|
+   15|    396|    //check if rhombi is square
+   16|    396|    if (quadState == 3 && hasFourRightAngles(points)) quadState = 4;
+   17|    396|
+   18|    396|    //return the state the parallelogram reached
+   19|    396|    return quadState;
+   20|    396|}
    21|       |
 
 /Users/willdunn/WillDunn/ParallelAndCongruentFunctions.cpp:
@@ -98,19 +98,19 @@
     8|       |double slopeToCompare1, slopeToCompare2, dx, dy, distanceOfSideOne, distanceOfSideTwo, distanceOfSideThree, distanceOfSideFour;
     9|       |
    10|       |///returns true if both sides are parallel (in pairs)
-   11|      0|bool hasBothSidesParallel(const std::vector<double> &points) {
-   12|      0|    return parallelSideCount(points) == 2;
-   13|      0|}
+   11|  1.15k|bool hasBothSidesParallel(const std::vector<double> &points) {
+   12|  1.15k|    return parallelSideCount(points) == 2;
+   13|  1.15k|}
    14|       |
    15|       |///returns true if one of the pair of sides is parallel, but not the other pair
-   16|      0|bool hasOneParallelSide(const std::vector<double> &points) {
-   17|      0|    return parallelSideCount(points) == 1;
-   18|      0|}
+   16|    760|bool hasOneParallelSide(const std::vector<double> &points) {
+   17|    760|    return parallelSideCount(points) == 1;
+   18|    760|}
    19|       |
    20|       |///returns true if there is a pair of congruent sides
-   21|      0|bool hasTwoCongruentSides(const std::vector<double> &points) {
-   22|      0|    return congruentSideCount(points) == 1;
-   23|      0|}
+   21|    584|bool hasTwoCongruentSides(const std::vector<double> &points) {
+   22|    584|    return congruentSideCount(points) == 1;
+   23|    584|}
    24|       |
    25|       |///returns true if all sides are congruent
    26|      0|bool hasFourCongruentSides(const std::vector<double> &points) {
@@ -118,10 +118,10 @@
    28|      0|}
    29|       |
    30|       |///returns true if the parallelogram in question has four right angles
-   31|      0|bool hasFourRightAngles(const std::vector<double> &points) {
-   32|      0|    //check if point1 is a right angle by matching y of point2 and x of point4; because parallel, the other sides must match
-   33|      0|    return points[6] == 0 && points[3] == 0;
-   34|      0|}
+   31|    396|bool hasFourRightAngles(const std::vector<double> &points) {
+   32|    396|    //check if point1 is a right angle by matching y of point2 and x of point4; because parallel, the other sides must match
+   33|    396|    return points[6] == 0 && points[3] == 0;
+   34|    396|}
    35|       |
    36|       |
    37|       |/**
@@ -129,61 +129,61 @@
    39|       | * @param points
    40|       | * @returns 0, 1, 2 for the number of pairs that are parallel amongst the points passed in
    41|       | */
-   42|      0|int parallelSideCount(const std::vector<double> &points) {
-   43|      0|    int parallelCount = 0;
-   44|      0|
-   45|      0|    //evaluate side 1 and 3 for parallelism
-   46|      0|    dx = points[2] - 0;
-   47|      0|    dy = points[3] - 0;
-   48|      0|    slopeToCompare1 = dy / dx;
-   49|      0|    dx = points[6] - points[4];
-   50|      0|    dy = points[7] - points[5];
-   51|      0|    slopeToCompare2 = dy / dx;
-   52|      0|    if (slopeToCompare1 == slopeToCompare2) parallelCount++;
-   53|      0|
-   54|      0|    //evaluate side 2 and 4 for parallelism
-   55|      0|    dx = points[4] - points[2];
-   56|      0|    dy = points[5] - points[3];
-   57|      0|    slopeToCompare1 = dy / dx;
-   58|      0|    dx = points[6] - 0;
-   59|      0|    dy = points[7] - 0;
-   60|      0|    slopeToCompare2 = dy / dx;
-   61|      0|    if (slopeToCompare1 == slopeToCompare2) parallelCount++;
-   62|      0|
-   63|      0|    return parallelCount;
-   64|      0|}
+   42|  1.91k|int parallelSideCount(const std::vector<double> &points) {
+   43|  1.91k|    int parallelCount = 0;
+   44|  1.91k|
+   45|  1.91k|    //evaluate side 1 and 3 for parallelism
+   46|  1.91k|    dx = points[2] - 0;
+   47|  1.91k|    dy = points[3] - 0;
+   48|  1.91k|    slopeToCompare1 = dy / dx;
+   49|  1.91k|    dx = points[6] - points[4];
+   50|  1.91k|    dy = points[7] - points[5];
+   51|  1.91k|    slopeToCompare2 = dy / dx;
+   52|  1.91k|    if (slopeToCompare1 == slopeToCompare2) parallelCount++;
+   53|  1.91k|
+   54|  1.91k|    //evaluate side 2 and 4 for parallelism
+   55|  1.91k|    dx = points[4] - points[2];
+   56|  1.91k|    dy = points[5] - points[3];
+   57|  1.91k|    slopeToCompare1 = dy / dx;
+   58|  1.91k|    dx = points[6] - 0;
+   59|  1.91k|    dy = points[7] - 0;
+   60|  1.91k|    slopeToCompare2 = dy / dx;
+   61|  1.91k|    if (slopeToCompare1 == slopeToCompare2) parallelCount++;
+   62|  1.91k|
+   63|  1.91k|    return parallelCount;
+   64|  1.91k|}
    65|       |
    66|       |///counts the number of congruent side pairs
-   67|      0|int congruentSideCount(const std::vector<double> &points) {
-   68|      0|    int congruentCount = 0;
-   69|      0|
-   70|      0|    //evaluate side 1 for distance  todo redo these to utilize the distance formula function; makes it cleaner
-   71|      0|    dx = (points[2] - 0) * (points[2] - 0);
-   72|      0|    dy = (points[3] - 0) * (points[3] - 0);
-   73|      0|    distanceOfSideOne = sqrt(dx + dy);
-   74|      0|
-   75|      0|    //evaluate side 2 for distance
-   76|      0|    dx = (points[4] - points[2]) * (points[4] - points[2]);
-   77|      0|    dy = (points[5] - points[3]) * (points[5] - points[3]);
-   78|      0|    distanceOfSideTwo = sqrt(dx + dy);
-   79|      0|
-   80|      0|    //evaluate side 3 for distance
-   81|      0|    dx = (points[6] - points[4]) * (points[6] - points[4]);
-   82|      0|    dy = (points[7] - points[5]) * (points[7] - points[5]);
-   83|      0|    distanceOfSideThree = sqrt(dx + dy);
-   84|      0|
-   85|      0|    //evaluate side 4 for distance
-   86|      0|    dx = (points[6] - 0) * (points[6] - 0);
-   87|      0|    dy = (points[7] - 0) * (points[7] - 0);
-   88|      0|    distanceOfSideFour = sqrt(dx + dy);
-   89|      0|
-   90|      0|    //works because you are only dealing with parallelograms at this point
-   91|      0|    if (distanceOfSideOne == distanceOfSideTwo) congruentCount++;
-   92|      0|    if (distanceOfSideOne == distanceOfSideThree) congruentCount++;
-   93|      0|    if (distanceOfSideOne == distanceOfSideFour) congruentCount++;
-   94|      0|
-   95|      0|    return congruentCount;
-   96|      0|}
+   67|    980|int congruentSideCount(const std::vector<double> &points) {
+   68|    980|    int congruentCount = 0;
+   69|    980|
+   70|    980|    //evaluate side 1 for distance  todo redo these to utilize the distance formula function; makes it cleaner
+   71|    980|    dx = (points[2] - 0) * (points[2] - 0);
+   72|    980|    dy = (points[3] - 0) * (points[3] - 0);
+   73|    980|    distanceOfSideOne = sqrt(dx + dy);
+   74|    980|
+   75|    980|    //evaluate side 2 for distance
+   76|    980|    dx = (points[4] - points[2]) * (points[4] - points[2]);
+   77|    980|    dy = (points[5] - points[3]) * (points[5] - points[3]);
+   78|    980|    distanceOfSideTwo = sqrt(dx + dy);
+   79|    980|
+   80|    980|    //evaluate side 3 for distance
+   81|    980|    dx = (points[6] - points[4]) * (points[6] - points[4]);
+   82|    980|    dy = (points[7] - points[5]) * (points[7] - points[5]);
+   83|    980|    distanceOfSideThree = sqrt(dx + dy);
+   84|    980|
+   85|    980|    //evaluate side 4 for distance
+   86|    980|    dx = (points[6] - 0) * (points[6] - 0);
+   87|    980|    dy = (points[7] - 0) * (points[7] - 0);
+   88|    980|    distanceOfSideFour = sqrt(dx + dy);
+   89|    980|
+   90|    980|    //works because you are only dealing with parallelograms at this point
+   91|    980|    if (distanceOfSideOne == distanceOfSideTwo) congruentCount++;
+   92|    980|    if (distanceOfSideOne == distanceOfSideThree) congruentCount++;
+   93|    980|    if (distanceOfSideOne == distanceOfSideFour) congruentCount++;
+   94|    980|
+   95|    980|    return congruentCount;
+   96|    980|}
 
 /Users/willdunn/WillDunn/main.cpp:
     1|       |#include <iostream>
@@ -247,39 +247,39 @@
    59|    995|    //get the points from the .txt
    60|    995|    std::ifstream inputFile(argv[1]); //grab .txt argument
    61|    995|    std::string currLine;
-   62|    995|    while (std::getline(inputFile, currLine)) {
-   63|      0|        points.push_back(0); //fill first two points with 0s
-   64|      0|        points.push_back(0);
-   65|      0|        std::string num = "";
-   66|      0|
-   67|      0|        //loop through the current line to separate numbers
-   68|      0|        for (int linePosition = 0; linePosition < currLine.size(); linePosition++) {
-   69|      0|            if (isspace(currLine[linePosition])) {
-   70|      0|                try {
-   71|      0|                    if (std::stod(num) > 100 || std::stod(num) < 0) errorType(1); //the point is out of range
-   72|      0|                } catch (const std::exception& e){
-   73|      0|                    errorType(1);
-   74|      0|                }
-   75|      0|                points.push_back(std::stod(num));
-   76|      0|                num = ""; //bookkeeping
-   77|      0|                continue; //whitespace, so continue to next number
-   78|      0|            } else if (linePosition == currLine.size() - 1) {
-   79|      0|                num += currLine[linePosition];
-   80|      0|                points.push_back(std::stod(num));
-   81|      0|                break;
-   82|      0|            }
-   83|      0|            num += currLine[linePosition];
-   84|      0|        }
-   85|      0|        if(points.size() != 8) errorType(1); //the input doesn't contain the correct number of points
-   86|      0|
-   87|      0|        //process the points and write result to output file as well as outputting to the user
-   88|      0|        outputFile << processPoints(points) << std::endl;
-   89|      0|        std::cout << processPoints(points) << std::endl;
-   90|      0|        points.clear(); //reset points so it doesn't fill with the points from the last argument line
-   91|      0|    }
+   62|  1.67k|    while (std::getline(inputFile, currLine)) {
+   63|    994|        points.push_back(0); //fill first two points with 0s
+   64|    994|        points.push_back(0);
+   65|    994|        std::string num = "";
+   66|    994|
+   67|    994|        //loop through the current line to separate numbers
+   68|  12.1k|        for (int linePosition = 0; linePosition < currLine.size(); linePosition++) {
+   69|  12.0k|            if (isspace(currLine[linePosition])) {
+   70|  3.95k|                try {
+   71|  3.95k|                    if (std::stod(num) > 100 || std::stod(num) < 0) errorType(1); //the point is out of range
+   72|  3.95k|                } catch (const std::exception& e){
+   73|    310|                    errorType(1);
+   74|    310|                }
+   75|  3.95k|                points.push_back(std::stod(num));
+   76|  3.64k|                num = ""; //bookkeeping
+   77|  3.64k|                continue; //whitespace, so continue to next number
+   78|  8.13k|            } else if (linePosition == currLine.size() - 1) {
+   79|    578|                num += currLine[linePosition];
+   80|    578|                points.push_back(std::stod(num));
+   81|    578|                break;
+   82|    578|            }
+   83|  7.55k|            num += currLine[linePosition];
+   84|  7.55k|        }
+   85|    994|        if(points.size() != 8) errorType(1); //the input doesn't contain the correct number of points
+   86|    683|
+   87|    683|        //process the points and write result to output file as well as outputting to the user
+   88|    683|        outputFile << processPoints(points) << std::endl;
+   89|    683|        std::cout << processPoints(points) << std::endl;
+   90|    683|        points.clear(); //reset points so it doesn't fill with the points from the last argument line
+   91|    683|    }
    92|    995|    inputFile.close();
-   93|    995|    outputFile.close();
-   94|    995|}
+   93|    684|    outputFile.close();
+   94|    684|}
    95|       |
    96|       |/**
    97|       | * Processes the input and assigns it a state, based on hierarchy of quadrilaterals and the finite states they can take.
@@ -287,32 +287,32 @@
    99|       | * @return
   100|       | *  -the type of quadrilateral the points are based on which state they reached
   101|       | */
-  102|      0|std::string processPoints(const std::vector<double> &points) {
-  103|      0|
-  104|      0|    if(hasPointsThatCoincide(points)) errorType(2);
-  105|      0|    else if (hasCrossingLineSegments(0, 0, points[2], points[3], points[4], points[5], points[6], points[7]) ||
-  106|      0|            hasCrossingLineSegments(0, 0, points[6], points[7], points[4], points[5], points[2], points[3])) {
+  102|  1.15k|std::string processPoints(const std::vector<double> &points) {
+  103|  1.15k|
+  104|  1.15k|    if(hasPointsThatCoincide(points)) errorType(2);
+  105|  1.15k|    else if (hasCrossingLineSegments(0, 0, points[2], points[3], points[4], points[5], points[6], points[7]) ||
+  106|  1.15k|            hasCrossingLineSegments(0, 0, points[6], points[7], points[4], points[5], points[2], points[3])) {
   107|      0|        errorType(3);
   108|      0|    }
-  109|      0|    //else if(hasCrossingLineSegments(points)) errorType(3);
-  110|      0|    else if(hasThreeColinearPoints(points)) errorType(4);
-  111|      0|
-  112|      0|    //go through hierarchy of determining which type of quadrilateral the input is utilizing finite states
-  113|      0|    int quadState = 0;
-  114|      0|
-  115|      0|    //state check for parallelogram, trap, or kite route
-  116|      0|    if (hasBothSidesParallel(points)) quadState = 1;
-  117|      0|    else if (hasOneParallelSide(points)) quadState = 5;
-  118|      0|    else if (hasTwoCongruentSides(points)) quadState = 6;
-  119|      0|    //else the state remains at 0;
-  120|      0|
-  121|      0|    //further change the state, if necessary, based on further checks to the hierarchy of parallelograms
-  122|      0|    if (quadState == 1) quadState = parallelogramFilter(points);
-  123|      0|
-  124|      0|    //output based on the state
-  125|      0|    std::vector<std::string> typeOfQuad{"quadrilateral", "parallelogram", "rectangle", "rhombus", "square",
-  126|      0|                                        "trapezoid", "kite"};
-  127|      0|    //std::cout << typeOfQuad[quadState] << std::endl;
-  128|      0|    return typeOfQuad[quadState];
-  129|      0|}
+  109|  1.15k|    //else if(hasCrossingLineSegments(points)) errorType(3);
+  110|  1.15k|    else if(hasThreeColinearPoints(points)) errorType(4);
+  111|  1.15k|
+  112|  1.15k|    //go through hierarchy of determining which type of quadrilateral the input is utilizing finite states
+  113|  1.15k|    int quadState = 0;
+  114|  1.15k|
+  115|  1.15k|    //state check for parallelogram, trap, or kite route
+  116|  1.15k|    if (hasBothSidesParallel(points)) quadState = 1;
+  117|    760|    else if (hasOneParallelSide(points)) quadState = 5;
+  118|    584|    else if (hasTwoCongruentSides(points)) quadState = 6;
+  119|  1.15k|    //else the state remains at 0;
+  120|  1.15k|
+  121|  1.15k|    //further change the state, if necessary, based on further checks to the hierarchy of parallelograms
+  122|  1.15k|    if (quadState == 1) quadState = parallelogramFilter(points);
+  123|  1.15k|
+  124|  1.15k|    //output based on the state
+  125|  1.15k|    std::vector<std::string> typeOfQuad{"quadrilateral", "parallelogram", "rectangle", "rhombus", "square",
+  126|  1.15k|                                        "trapezoid", "kite"};
+  127|  1.15k|    //std::cout << typeOfQuad[quadState] << std::endl;
+  128|  1.15k|    return typeOfQuad[quadState];
+  129|  1.15k|}
 
